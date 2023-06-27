@@ -1,0 +1,22 @@
+note {
+    background-color: #ffeb3b;
+}
+
+
+to {
+    display: block;
+    color: #000000;
+    font-size: 20pt;
+}
+
+from {
+    display: block;
+    color: #000000;
+    font-size: 20pt;
+}
+
+body {
+    color: #000000;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Jquery Referencias </title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/main.css" rel="stylesheet" />
+        <!--<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        
+        <style>
+            body{
+                 background-color: lightgray;
+            }
+            .container{
+                padding-top: 5%;
+                padding-bottom: 2%;
+            }
+                .even {
+      background-color: lightcoral;
+    }
+
+    .odd {
+      background-color: lightblue;
+    }
+
+    .first {
+      background-color: yellow;
+    }
+
+    .last {
+      background-color: green;
+    }
+        .selected {
+      background-color: lightblue;
+    }
+        .radio-box {
+      display: inline-block;
+      padding: 5px;
+      border: 1px solid #ccc;
+    }
+    .child {
+      padding: 10px;
+      margin-bottom: 5px;
+      background-color: lightblue;
+      cursor: pointer;
+    }
+
+    .child.active {
+      background-color: lightgreen;
+    }
+        #box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+        #box2 {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      opacity: 1;
+    }
+       .original {
+      background-color: lightblue;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .contener {
+      border: 1px solid black;
+      padding: 10px;
+    }
+        .ancestor {
+      background-color: lightblue;
+      padding: 10px;
+    }
+    .targeta {
+      background-color: pink;
+      padding: 10px;
+      margin-top: 10px;
+    }
+        .item11 {
+      background-color: lightblue;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .highlight12 {
+      color: red;
+    }
+    .greater-than-three {
+      font-weight: bold;
+    }
+        .highlighted23 {
+      background-color: greenyellow;
+    }
+
+        </style>
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper" >
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-light"></div>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/HTML/index.html">Inicio</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#selectores">Selectores</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#Variables">Variables</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#Efectos">Efectos</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#HTML/CSS">Metodos HTML/CSS</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#cruzado">Metodos Cruzados</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#Ajax">Metodos AJAX</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#Misc">Metodos varios</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#propiedades">Propiedades</a>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom" style="position: fixed; top: 0; width: 100%;">
+                    <div class="container-fluid">
+                        <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
+                   </div>
+                </nav>
+                <!-- Page content-->
+            <div class="selectores">
+                <section id="selectores">
+
+                        <div class="container">
+                            <div>
+                                <h1>Selectores</h1>
+                                <p>
+                                    Los selectores son cadenas de texto que permiten seleccionar elementos en la página. Con un selector podemos acceder a un elemento único o a una colección de elementos determinados. Los selectores en realidad vienen del lenguaje CSS, por lo que para construirlos se usa la misma sintaxis de selectores de CSS.
+
+                                    Casi todo en jQuery pasa por utilizar los selectores para acceder a los elementos de la página que deseamos alterar dinámicamente con Javascript. Hasta en los ejemplos más básicos del Manual de jQuery se tienen que utilizar selectores para acceder a los elementos que deseamos alterar, así que inevitablemente, si has leído este manual hasta este artículo, los habrás utilizado ya.
+                                </p>
+                            </div>
+                            <div class="medio_lateral">
+                                <div class="col-md-8 contenido-scrollspy" data-spy="scroll" data-target="#menu" data-offset="0">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Example</th>
+                                                    <th>Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="table-body">
+                                                <!-- Aquí puedes agregar filas adicionales si es necesario -->
+                                            </tbody>
+                                        </table>
+                                </div>                                
+                        </div>
+                        <div class="col-md-11">
+                            
+                            <div class="tab-content">
+                                <div class="panel panel-primary" id="Par1">
+                                <div class="panel-heading"> <h2>EJEMPLO 1:</h2></div>
+                                <div class="panel-body">
+                                  <div> <h2> <span>Párrafos y el encabezado dentro de un contenedor</span></h2>   
+                                  </div>
+                                    <div id="parrafo">
+                                      <h3>PARRAFO</h3>
+                                      <p>En este caso, "#parrafo p, #parrafo h1" indica que se deben seleccionar los elementos -p- y el elemento -h3- que se encuentren dentro del elemento con el ID "parrafo". Luego, utilizamos el método css() para cambiar el color de fuente a rojo.</p>
+                                    </div>
+                                    <div id="Textoo">
+                                      <h3>TEXTO</h3>
+                                      <p>Por lo tanto los parrafos que no esten dentro del ID parrafo no son tomados en cuenta para realizar la modificacion</p>
+                                    </div>
+                                      
+                                    
+                                    <script>
+                                      $(document).ready(function() {
+                                        $("#parrafo p, #parrafo h3").css("color", "red");
+                                      });
+                                    </script>
+
+
+                                    </div>
+                                    </div>
+
+                            <div class="panel panel-primary" id="Par2">
+                                <div class="panel-heading"><h2>EJEMPLO 2:</h2></div>
+                                <div class="panel-body">
+                                  <div> <h3> <span> Cambiar el estilo a cada una de las Filas</span></h3>
+                                    <div>
+                                      <p>Supongamos que tienes una tabla en tu página con varias filas -tr-. Quieres seleccionar y aplicar un estilo diferente al primer elemento, el último elemento, las filas pares y las filas impares de la tabla.</p>
+                                    </div>
+                                    
+                                  <div id="container">
+                                    <table>
+                                      <tr>
+                                       <td>Nombre</td>
+                                        <td>Numero</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Coco</td>
+                                        <td>2</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Fresa</td>
+                                        <td>4</td>
+                                      </tr>
+                                     <tr>
+                                       <td>Sandia</td>
+                                       <td>1</td>
+                                     </tr>
+                                   </table>
+                                 </div>
+
+                                       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                                            <script>
+                                              $(document).ready(function() {
+                                                $("#container table tr:first").addClass("first"); // Primer elemento <tr>
+                                                $("#container table tr:last").addClass("last"); // Último elemento <tr>
+                                                $("#container table tr:even").addClass("even"); // Filas pares <tr>
+                                                $("#container table tr:odd").addClass("odd"); // Filas impares <tr>
+                                              });
+                                            </script>
+
+                                  </div>
+
+
+
+                                </div>
+                            </div>
+
+                            <div class="panel panel-primary" id="Par3">
+                                <div class="panel-heading"><h2>EJEMPLO 3:</h2></div>
+                                <div class="panel-body">
+                                  <div> <h3> <span> Identifica elementos (Parrafos, titulos) especificos.</span></h3>
+                                      <div id="contenedor">
+                                              <p>$("p:first-child") selecciona el primer párrafo que es el primer hijo de su padre y le agrega la clase "selected".</p>
+                                               <p>Segundo párrafo</p>
+                                               <p>Tercer párrafo</p>
+                                               <p>$("p:last-child") selecciona el último párrafo que es el último hijo de su padre y le agrega la clase "selected".</p>
+                                          
+                                        </div>
+                                          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                                         <script>
+                                           $(document).ready(function() {
+                                             // :first-child
+                                             $("#contenedor p:first-child").addClass("selected");
+                                        
+                                             // :first-of-type
+                                             $("#contenedor p:first-of-type").addClass("selected");
+                                        
+                                             // :last-child
+                                             $("#contenedor p:last-child").addClass("selected");
+                                           });
+                                         </script>
+                                    
+                                  </div>
+
+
+
+                                </div>
+                            </div>
+
+                            <div class="panel panel-primary" id="Par3">
+                                <div class="panel-heading"><h2>EJEMPLO 4:</h2></div>
+                                <div class="panel-body">
+                                  <div> <h3> <span>  Selectores :eq(index)</span></h3>    
+                                  </div>
+                                  <div>
+                                              <p>Se ha utilizado el selector $("#myList li:eq(3)") para seleccionar el cuarto elemento (-li-) dentro de la lista específica con el ID "myList".</p>
+                                          
+                                        </div>
+                                     <ul id="myList">
+                                       <li>Elemento 1</li>
+                                       <li>Elemento 2</li>
+                                       <li>Elemento 3</li>
+                                       <li>Elemento 4</li> <!-- Este es el cuarto elemento -->
+                                       <li>Elemento 5</li>
+                                       <li>Elemento 6</li>
+                                     </ul>
+
+                                     <script>
+                                       $(document).ready(function() {
+                                         // :eq(index)
+                                         $("#myList li:eq(3)").addClass("selected");
+                                       });
+                                     </script>
+
+
+
+                                </div>
+                            </div>
+
+                            <div class="panel panel-primary" id="Par5">
+                                <div class="panel-heading"><h2>EJEMPLO 5:</h2></div>
+                                <div class="panel-body">
+                                  <div> <h3> <span>  Selector :focus para seleccionar el elemento que actualmente tiene el enfoque</span></h3>  
+                                  </div>
+                                  <div>
+                                       Al cargar la página, si alguno de los campos de entrada tiene el enfoque, se le aplicará la clase "selected" y se resaltará con un fondo celeste.
+                                  </div>
+                                  <div>
+                                      <input type="text" placeholder="Elemento 1" />
+                                      <input type="text" placeholder="Elemento 2" />
+                                      <input type="text" placeholder="Elemento 3" />
+                                  </div>
+                                 <script>
+                                   $(document).ready(function() {
+                                     // :focus
+                                      $(":focus").addClass("selected");
+                                
+                                     // Evento para resaltar el elemento seleccionado al hacer clic
+                                     $("input").focus(function() {
+                                       $(".selected").removeClass("selected");
+                                       $(this).addClass("selected");
+                                     });
+                                   });
+                                 </script>
+
+
+                                </div>
+                            </div>
+
+                            <div class="panel panel-primary" id="Par6">
+                                <div class="panel-heading"><h2>EJEMPLO 6:</h2></div>
+                                <div class="panel-body">
+                                  <div> <h3> <span> selector [attribute|=value]</span></h3></div
+                                  >
+                                  <div>
+                                       <p>El selector [attribute|=value] junto con el atributo title para seleccionar todos los elementos que tienen un atributo de título igual a "Tomorrow" o que comienza con "Tomorrow" seguido de un guion. A los elementos seleccionados se les aplica la clase "selected" para resaltarlos con un fondo Celeste.</p>
+                                  </div>
+                                    <div title="Tomorrow">TEXTO 1</div> <!-- Se selecciona -->
+                                    <div title="Today">TEXTO 2</div>
+                                    <div title="Tomorrow-123">TEXTO 3</div> <!-- Se selecciona -->       
+                                    <div title="Next Tomorrow">TEXTO 4</div> 
+
+                                    <script>
+                                       $(document).ready(function() {
+                                          // [attribute|=value]
+                                          $("[title|='Tomorrow']").addClass("selected");
+                                       });
+                                     </script>
+
+
+
+                                </div>
+                            </div>
+
+                            <div class="panel panel-primary" id="Par7">
+                                <div class="panel-heading"><h2>EJEMPLO 7:</h2></div>
+                                <div class="panel-body">
+                                  <div> <h3> <span>  Selector :radio</span></h3></div>  
+
+                                  <div>
+                                      <p>En este ejemplo, se ha utilizado el selector :radio para seleccionar todos los elementos de entrada que tienen el atributo type establecido como "radio". A los elementos seleccionados se les aplica la clase "selected" para resaltarlos con un fondo Celeste. Observarás que los elementos -input- que tienen el tipo de entrada establecido como "radio" serán seleccionados y resaltados.</p>
+                                  </div>
+
+
+                                <div class="radio-box">
+                                  <input type="radio" name="option" value="1">Opción 1
+                                </div>
+                                <div class="radio-box">
+                                  <input type="radio" name="option" value="2">Opción 2
+                                </div>
+                                <div class="radio-box">
+                                  <input type="checkbox" name="option" value="3">Opción 3
+                                 </div>
+                                <div class="radio-box">
+                                  <input type="radio" name="option" value="4">Opción 4
+                                </div>
+                                 <script>
+                                   $(document).ready(function() {
+                                     // :radio
+                                     $(":radio").focus(function() {
+                                       $(this).closest(".radio-box").addClass("selected");
+                                     }).blur(function() {
+                                       $(this).closest(".radio-box").removeClass("selected");
+                                     });
+                                  });
+                                </script>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                            </div>
+                            
+                        </div>
+                      <script>
+                        // Cargar el archivo XML
+                        var xmlhttp = new XMLHttpRequest();
+                        xmlhttp.open("GET", "xml/selectores.xml", false);
+                        xmlhttp.send();
+                        var xmlData = xmlhttp.response;
+                    
+                        // Parsear el XML
+                        var parser = new DOMParser();
+                        var xmlDoc = parser.parseFromString(xmlData, "text/xml");
+                    
+                        // Obtener los elementos 'selector'
+                        var selectors = xmlDoc.getElementsByTagName("selector");
+                    
+                        // Iterar sobre los elementos 'selector' y construir las filas de la tabla
+                        var tableBody = document.getElementById("table-body");
+                        for (var i = 0; i < selectors.length; i++) {
+                          var selector = selectors[i];
+                          var name = selector.getElementsByTagName("name")[0].textContent;
+                          var example = selector.getElementsByTagName("example")[0].textContent;
+                          var description = selector.getElementsByTagName("description")[0].textContent;
+                    
+                          var row = `
+                            <tr>
+                              <td>${name}</td>
+                              <td>${example}</td>
+                              <td>${description}</td>
+                            </tr>
+                          `;
+                          tableBody.innerHTML += row;
+                        }
+                      </script>
+                </section>
+            </div>
+
+            <div class="Variables">
+                <section id="Variables">
+                    
+                    <div class="container">
+                        <div>
+                            <h1>Variables</h1>
+                            <p>
+                                Un evento jQuery es el resultado de una acción que jQuery (JavaScript) puede detectar. Cuando se activan estos eventos, puede usar una función personalizada para hacer prácticamente lo que quiera con el evento. Estas funciones personalizadas se denominan controladores de eventos.
+
+                                La biblioteca jQuery proporciona métodos para manejar todos los eventos DOM y hacer que el manejo completo de eventos sea considerablemente más fácil que lo que tenemos disponible en JavaScript.
+                            </p>
+                        </div>
+                        <div class="medio_lateral">
+                            <div class="col-md-8 contenido-scrollspy" data-spy="scroll" data-target="#menu" data-offset="0">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="table-body2">
+                                            <!-- Aquí puedes agregar filas adicionales si es necesario -->
+                                        </tbody>
+                                    </table>
+                            </div>                                
+                    </div>
+                    <div class="col-md-11">
+
+                        <div class="tab-content">
+                            <div class="panel panel-primary" id="Eje1">
+                                <div class="panel-heading"> <h2>EJEMPLO 1:</h2></div>
+                                <div class="panel-body">
+                                  <div> <h2> <span>Método .delegate() de jQuery para adjuntar un controlador de eventos</span></h2>   </div>
+
+                                    <div>
+                                         Cada vez que se hace clic en un elemento secundario con la clase "child" dentro del contenedor con el ID "container", se activa la función del controlador de eventos. En este caso, simplemente cambiamos la clase del elemento secundario haciendo uso del método .toggleClass().
+                                    </div>
+                                  
+                                    <div id="contenidos">
+                                     <div class="child">Elemento 1</div>
+                                     <div class="child">Elemento 2</div>
+                                     <div class="child">Elemento 3</div>
+                                    </div>
+                                      
+                                    
+                                   <script>
+                                      $(document).ready(function() {
+                                        // Adjunta un controlador de eventos utilizando .delegate()
+                                        $('#contenidos').delegate('.child', 'click', function() {
+                                          // Acciones cuando se hace clic en un elemento secundario
+                                          $(this).toggleClass('active');
+                                        });
+                                    
+                                      // Agrega un nuevo elemento secundario después de 3 segundos
+                                          setTimeout(function() {
+                                          $('#contenidos').append('<div class="child">Nuevo elemento</div>');
+                                        }, 3000);
+                                      });
+                                     </script>
+
+
+                                </div>
+                         </div>
+
+                        <div class="panel panel-primary" id="Eje2">
+                                <div class="panel-heading"> <h2>EJEMPLO 2:</h2></div>
+                                <div class="panel-body">
+                                  <div> <h2> <span> Propiedad event.data para pasar datos opcionales a un controlador</span></h2>   </div>
+
+                                    <div>
+                                         En este ejemplo, hemos adjuntado un controlador de eventos al botón con el ID "myButton". Al adjuntar el controlador de eventos, también hemos pasado un objeto con datos opcionales: {name: 'Douglas', age: 24}. Estos datos opcionales se pueden acceder dentro del controlador de eventos a través de la propiedad event.data.
+                                    </div>
+
+
+                                    <button id="myButton">Haz clic aquí</button>
+                                    <textarea id="resultBox" rows="2" cols="30"></textarea>
+                                      
+                                    
+                                     <script>
+                                       $(document).ready(function() {
+                                         // Adjunta un controlador de eventos con datos opcionales
+                                         $('#myButton').on('click', {name: 'Douglas', age: 24}, function(event) {
+                                           var data = event.data;
+                                           var result = 'Name: ' + data.name + '\nAge: ' + data.age;
+                                           $('#resultBox').val(result);
+                                         });
+                                       });
+                                     </script>
+
+
+                                    </div>
+                                 </div>
+                        </div>
+                        
+                    </div>
+                  <script>
+                    // Cargar el archivo XML
+                    var xmlhttp = new XMLHttpRequest();
+                    xmlhttp.open("GET", "xml/eventos.xml", false);
+                    xmlhttp.send();
+                    var xmlData = xmlhttp.response;
+                
+                    // Parsear el XML
+                    var parser = new DOMParser();
+                    var xmlDoc = parser.parseFromString(xmlData, "text/xml");
+                
+                    // Obtener los elementos 'selector'
+                    var selectors = xmlDoc.getElementsByTagName("selector");
+                
+                    // Iterar sobre los elementos 'selector' y construir las filas de la tabla
+                    var tableBody = document.getElementById("table-body2");
+                    for (var i = 0; i < selectors.length; i++) {
+                      var selector = selectors[i];
+                      var name = selector.getElementsByTagName("name")[0].textContent;
+                      var description = selector.getElementsByTagName("description")[0].textContent;
+                
+                      var row = `
+                        <tr>
+                          <td>${name}</td>
+                          <td>${description}</td>
+                        </tr>
+                      `;
+                      tableBody.innerHTML += row;
+                    }
+                  </script>
+
+
+                </section>
+            </div>
+
+            <div class="Efectos">
+                <section id="Efectos">
+                    
+                    <div class="container">
+                        <div>
+                            <h1>Efectos</h1>
+                            <p>
+                                La biblioteca jQuery proporciona varias técnicas para agregar animación a una página web. Estos incluyen animaciones simples y estándar que se usan con frecuencia y la capacidad de crear efectos personalizados sofisticados.
+                                Los efectos se refieren a las animaciones y transiciones visuales que se pueden aplicar a los elementos HTML. jQuery proporciona una variedad de métodos y funciones para crear y controlar efectos, lo que permite mejorar la experiencia del usuario al interactuar con una página web.
+                            </p>
+                        </div>
+                        <div class="medio_lateral">
+                            <div class="col-md-8 contenido-scrollspy" data-spy="scroll" data-target="#menu" data-offset="0">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Metodo</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="table-body3">
+                                            <!-- Aquí puedes agregar filas adicionales si es necesario -->
+                                        </tbody>
+                                    </table>
+                            </div>                                
+                    </div>
+                    <div class="col-md-11">
+
+                        <div class="tab-content">
+                            <div class="panel panel-primary" id="Eje1">
+                                <div class="panel-heading"> <h2>EJEMPLO 1:</h2></div>
+                                <div class="panel-body">
+                                  <div> <h2> <span>Método .animate() de jQuery para ejecutar una animación</span></h2>   </div>
+
+                                    <div>
+                                         En este ejemplo, tenemos un cuadro -div- con el ID "box" que se utilizará para la animación. Al hacer clic en el botón con el ID "startButton", se ejecutará la animación utilizando el método .animate().
+                                    </div>
+                                  
+                                        <div id="box"></div>
+                                         <button id="startButton">Start Animation</button>
+                                    
+                                     <script>
+                                       $(document).ready(function() {
+                                        $('#startButton').click(function() {
+                                          $('#box').animate({
+                                            width: '200px',
+                                            height: '200px',
+                                            backgroundColor: 'blue',
+                                             opacity: '0.5',
+                                             borderRadius: '50%'
+                                           }, 1500);
+                                         });
+                                       });
+                                     </script>
+
+
+                                </div>
+                         </div>
+
+                        <div class="panel panel-primary" id="Eje2">
+                                <div class="panel-heading"> <h2>EJEMPLO 2:</h2></div>
+                                <div class="panel-body">
+                                  <div> <h2> <span>método .fadeTo() de jQuery para desvanecer los elementos</span></h2>   </div>
+
+                                    <div>
+                                         En este ejemplo, tenemos un cuadro -div- con el ID "box2" que se utilizará para la animación de desvanecimiento. También tenemos dos botones: "Fade In" (Desvanecer entrada) y "Fade Out" (Desvanecer salida) que activarán los respectivos efectos de desvanecimiento.
+                                    </div>
+
+
+                                     <div id="box2"></div>
+                                    <button id="fadeInButton">Fade In</button>
+                                    <button id="fadeOutButton">Fade Out</button>
+                                    
+                                    <script>
+                                       $(document).ready(function() {
+                                         $('#fadeInButton').click(function() {
+                                           $('#box2').fadeTo(1000, 0.5);
+                                         });
+                                    
+                                         $('#fadeOutButton').click(function() {
+                                          $('#box2').fadeTo(1000, 0);
+                                        });
+                                      });
+                                    </script>
+
+
+                                    </div>
+                                 </div>
+                        </div>
+                        
+                    </div>
+                  <script>
+                    // Cargar el archivo XML
+                    var xmlhttp = new XMLHttpRequest();
+                    xmlhttp.open("GET", "xml/efectos.xml", false);
+                    xmlhttp.send();
+                    var xmlData = xmlhttp.response;
+                
+                    // Parsear el XML
+                    var parser = new DOMParser();
+                    var xmlDoc = parser.parseFromString(xmlData, "text/xml");
+                
+                    // Obtener los elementos 'selector'
+                    var selectors = xmlDoc.getElementsByTagName("selector");
+                
+                    // Iterar sobre los elementos 'selector' y construir las filas de la tabla
+                    var tableBody = document.getElementById("table-body3");
+                    for (var i = 0; i < selectors.length; i++) {
+                      var selector = selectors[i];
+                      var name = selector.getElementsByTagName("name")[0].textContent;
+                      var description = selector.getElementsByTagName("description")[0].textContent;
+                
+                      var row = `
+                        <tr>
+                          <td>${name}</td>
+                          <td>${description}</td>
+                        </tr>
+                      `;
+                      tableBody.innerHTML += row;
+                    }
+                  </script>
+
+
+                </section>
+            </div>
+            <div class="HTML_CSS">
+                <section id="HTML_CSS">
+                    
+                    <div class="container">
+                        <div>
+                            <h1>Metodos HTML / CSS</h1>
+                            <p>
+                                Los métodos HTML en jQuery son funciones que se utilizan para manipular y modificar elementos HTML en una página web. Estos métodos permiten realizar tareas como agregar, eliminar o modificar contenido HTML, acceder y manipular atributos, estilos y clases de elementos, entre otras acciones.
+                                La siguiente tabla enumera todos los métodos utilizados para manipular HTML y CSS.
+
+                                Los métodos a continuación funcionan tanto para documentos HTML como XML. Excepción: el método html().
+                            </p>
+                        </div>
+                        <div class="medio_lateral">
+                            <div class="col-md-8 contenido-scrollspy" data-spy="scroll" data-target="#menu" data-offset="0">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Metodo</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="table-body4">
+                                            <!-- Aquí puedes agregar filas adicionales si es necesario -->
+                                        </tbody>
+                                    </table>
+                            </div>                                
+                    </div>
+                    <div class="col-md-11">
+ 
+                        <div class="tab-content">
+                            <div class="panel panel-primary" id="Eje1">
+                                <div class="panel-heading"> <h2>EJEMPLO 1:</h2></div>
+                                <div class="panel-body">
+                                  <div> <h2> <span>Método .insertBefore() de jQuery para insertar elementos HTML</span></h2>   </div>
+
+                                    <div>
+                                         Cuando se hace clic en el botón con el ID "insertButton", se ejecuta la función asociada. Esta función utiliza el método .insertBefore() para crear un nuevo elemento -p- con el texto "New paragraph" y lo inserta antes de los elementos seleccionados con la clase "target". En este caso, se insertará antes del primer párrafo existente.
+                                    </div>
+                                  
+                                     <div class="target">
+                                       <p>Paragraph 1</p>
+                                       <p>Paragraph 2</p>
+                                       <p>Paragraph 3</p>
+                                     </div>
+                                     <button id="insertButton">Insert Before</button>
+                                    
+                                     <script>
+                                       $(document).ready(function() {
+                                         $('#insertButton').click(function() {
+                                           $('<p>New paragraph</p>').insertBefore('.target');
+                                         });
+                                       });
+                                     </script>
+
+
+                                </div>
+                         </div>
+
+                        <div class="panel panel-primary" id="Eje2">
+                                <div class="panel-heading"> <h2>EJEMPLO 2:</h2></div>
+                                <div class="panel-body">
+                                  <div> <h2> <span> Método .clone() de jQuery para hacer una copia de elementos</span></h2>   </div>
+
+                                    <div>
+                                         En este ejemplo, tenemos un contenedor -div- con la clase "container" que contiene un elemento con la clase "original". Cuando se hace clic en el botón con el ID "cloneButton", se ejecuta la función asociada.
+
+Esta función utiliza el método .clone() para hacer una copia del elemento con la clase "original". Luego, utiliza .appendTo('.container') para agregar la copia al final del contenedor con la clase "container".
+                                    </div>
+
+                                    <div class="contener">
+                                      <div class="original">
+                                        <p>Este elemento se va a clonar.</p>
+                                      </div>
+                                    </div>
+                                    <button id="cloneButton">Clone</button>
+                                    
+                                     <script>
+                                       $(document).ready(function() {
+                                         $('#cloneButton').click(function() {
+                                           $('.original').clone().appendTo('.contener');
+                                         });
+                                       });
+                                     </script>
+
+
+                                    </div>
+                                 </div>
+                        </div>
+                        
+                    </div>
+                  <script>
+                    // Cargar el archivo XML
+                    var xmlhttp = new XMLHttpRequest();
+                    xmlhttp.open("GET", "xml/metodshtmlcss.xml", false);
+                    xmlhttp.send();
+                    var xmlData = xmlhttp.response;
+                
+                    // Parsear el XML
+                    var parser = new DOMParser();
+                    var xmlDoc = parser.parseFromString(xmlData, "text/xml");
+                
+                    // Obtener los elementos 'selector'
+                    var selectors = xmlDoc.getElementsByTagName("selector");
+                
+                    // Iterar sobre los elementos 'selector' y construir las filas de la tabla
+                    var tableBody = document.getElementById("table-body4");
+                    for (var i = 0; i < selectors.length; i++) {
+                      var selector = selectors[i];
+                      var name = selector.getElementsByTagName("name")[0].textContent;
+                      var description = selector.getElementsByTagName("description")[0].textContent;
+                
+                      var row = `
+                        <tr>
+                          <td>${name}</td>
+                          <td>${description}</td>
+                        </tr>
+                      `;
+                      tableBody.innerHTML += row;
+                    }
+                  </script>
+
+
+                </section>
+            </div>
+
+            <div class="crusado">
+                <section id="crusado">
+                    
+                    <div class="container">
+                        <div>
+                            <h1>Metodos Cruzados</h1>
+                            <p>
+                                Los métodos cruzados, también conocidos como métodos AJAX o llamadas AJAX cruzadas, son técnicas utilizadas en jQuery (y en JavaScript en general) para realizar solicitudes HTTP asincrónicas a un servidor y obtener datos sin tener que recargar toda la página web.
+
+                                Estos métodos son particularmente útiles cuando se trabaja con contenido dinámico y se necesita actualizar 
+                                partes específicas de una página sin afectar el resto del contenido.
+                                En jQuery, atravesar significa moverse a través o sobre los elementos HTML para buscar, filtrar o seleccionar un elemento en particular o completo.
+                                En función de los propósitos transversales, los siguientes métodos se clasifican de la siguiente manera:
+                            </p>
+                        </div>
+                        <div class="medio_lateral">
+                            <div class="col-md-8 contenido-scrollspy" data-spy="scroll" data-target="#menu" data-offset="0">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Metodo</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="table-body5">
+                                            <!-- Aquí puedes agregar filas adicionales si es necesario -->
+                                        </tbody>
+                                    </table>
+                            </div>                                
+                    </div>
+                    <div class="col-md-11">
+
+                        <div class="tab-content">
+
+                    <div class="panel panel-primary" id="Eje1">
+                                <div class="panel-heading"> <h2>EJEMPLO 1:</h2></div>
+                                <div class="panel-body">
+                                  <div> <h2> <span>Método .closest() de jQuery para obtener el primer ancestro de un elemento</span></h2>   </div>
+
+                                    <div>
+                                          Cuando se hace clic en el elemento con la clase "target", se ejecuta la función asociada.
+
+                                            Esta función utiliza el método .closest('.ancestor') para buscar el primer ancestro del elemento seleccionado 
+                                            con la clase "ancestor". Luego, se utiliza el método .css() para cambiar el color de fondo del ancestro 
+                                            encontrado a amarillo.
+                                    </div>
+                                  
+                                     <div class="ancestor">
+                                       <div>
+                                         <div class="targeta">Click aqui</div>
+                                       </div>
+                                     </div>
+                                    
+                                     <script>
+                                       $(document).ready(function() {
+                                         $('.targeta').click(function() {
+                                           var ancestor = $(this).closest('.ancestor');
+                                           ancestor.css('background-color', 'yellow');
+                                         });
+                                       });
+                                     </script>
+
+
+                                </div>
+                         </div>
+
+                        <div class="panel panel-primary" id="Eje2">
+                                <div class="panel-heading"> <h2>EJEMPLO 2:</h2></div>
+                                <div class="panel-body">
+                                  <div> <h2> <span> Método .filter() de jQuery para reducir el conjunto de elementos</span></h2>   </div>
+
+                                    <div>
+                                         El método .filter('.highlight') selecciona solo los elementos con la clase "item" que también tienen la clase "highlight" y les cambia el color de fondo a amarillo. En el segundo caso, la función de prueba selecciona solo los elementos con la clase "number" cuyo texto es mayor que 3 y les agrega la clase "greater-than-three".
+
+                                    </div>
+                                     <div class="item11">Item 1</div>
+                                     <div class="item11 highlight12">Item 2</div>
+                                     <div class="item11">Item 3</div>
+                                     <div class="number">1</div>
+                                     <div class="number">2</div>
+                                     <div class="number">3</div>
+                                     <div class="number">4</div>
+                                     <div class="number">5</div>
+
+                                    
+                                     <script>
+                                       $(document).ready(function() {
+                                         $('.item11').filter('.highlight12').css('background-color', 'yellow');
+                                         
+                                         $('.number').filter(function() {
+                                           return $(this).text() > 3;
+                                         }).addClass('greater-than-three');
+                                       });
+                                     </script>
+
+
+                                    </div>
+                                 </div>
+
+                        </div>
+                        
+                    </div>
+                  <script>
+                    // Cargar el archivo XML
+                    var xmlhttp = new XMLHttpRequest();
+                    xmlhttp.open("GET", "xml/cruzados.xml", false);
+                    xmlhttp.send();
+                    var xmlData = xmlhttp.response;
+                
+                    // Parsear el XML
+                    var parser = new DOMParser();
+                    var xmlDoc = parser.parseFromString(xmlData, "text/xml");
+                
+                    // Obtener los elementos 'selector'
+                    var selectors = xmlDoc.getElementsByTagName("selector");
+                
+                    // Iterar sobre los elementos 'selector' y construir las filas de la tabla
+                    var tableBody = document.getElementById("table-body5");
+                    for (var i = 0; i < selectors.length; i++) {
+                      var selector = selectors[i];
+                      var name = selector.getElementsByTagName("name")[0].textContent;
+                      var description = selector.getElementsByTagName("description")[0].textContent;
+                
+                      var row = `
+                        <tr>
+                          <td>${name}</td>
+                          <td>${description}</td>
+                        </tr>
+                      `;
+                      tableBody.innerHTML += row;
+                    }
+                  </script>
+
+
+                </section>
+            </div>
+
+            <div class="Ajax">
+                <section id="Ajax">
+                    
+                    <div class="container">
+                        <div>
+                            <h1>Metodos AJAX</h1>
+                            <p>
+                                
+Los métodos AJAX (Asynchronous JavaScript and XML) son técnicas utilizadas en programación web para realizar solicitudes asincrónicas al servidor y obtener datos sin tener que recargar toda la página. Estos métodos permiten actualizar contenido de forma dinámica, intercambiar datos con el servidor y mejorar la experiencia del usuario al interactuar con una aplicación web.
+                                AJAX es el arte de intercambiar datos con un servidor y actualizar partes de una página web, sin recargar toda la página.
+
+
+                                La siguiente tabla enumera todos los métodos de jQuery AJAX:
+                            </p>
+                        </div>
+                        <div class="medio_lateral">
+                            <div class="col-md-8 contenido-scrollspy" data-spy="scroll" data-target="#menu" data-offset="0">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Metodo</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="table-body6">
+                                            <!-- Aquí puedes agregar filas adicionales si es necesario -->
+                                        </tbody>
+                                    </table>
+                            </div>                                
+                    </div>
+                    <div class="col-md-11">
+
+                        <div class="tab-content">
+                            <div class="panel panel-primary" id="Eje1">
+                                <div class="panel-heading"> <h2>EJEMPLO 1:</h2></div>
+                                <div class="panel-body">
+                                  <div> <h2> <span>$.ajaxPrefilter() para manejar opciones personalizadas </span></h2>   </div>
+
+                                    <div>
+Dentro del manejador de eventos, hemos utilizado $.ajax() para realizar la solicitud AJAX al servidor. Hemos proporcionado la URL del servidor ('example.com') y el tipo de solicitud ('GET'). En caso de éxito, hemos manipulado la respuesta del servidor mostrándola en el elemento -div- con el id "result" utilizando $('#result').text(JSON.stringify(data)). En caso de error, hemos mostrado un mensaje de error en el mismo elemento.
+                                    </div>
+                                  
+                                    <button id="btnRequest">Realizar solicitud AJAX</button>
+                                     <div id="result"></div>
+                                      <script>
+                                      $(document).ready(function() {
+                                      $.ajaxPrefilter(function(options, originalOptions, jqXHR) {
+                                        // Manipula las opciones de la solicitud AJAX antes de enviarla
+                                        
+                                        // Agrega un encabezado personalizado a todas las solicitudes AJAX
+                                       options.headers = options.headers || {};
+                                       options.headers['X-Custom-Header'] = 'Custom Value';
+                                       
+                                       // Modifica la URL de la solicitud agregando un parámetro adicional
+                                       options.url += '?customParam=example';
+                                       
+                                       // Puedes realizar cualquier otra manipulación necesaria en las opciones de la solicitud
+                                       
+                                      // Por ejemplo, puedes agregar autenticación, establecer el tipo de datos esperados, etc.
+                                     });
+                                     
+                                     // Manejador de eventos para el botón
+                                     $('#btnRequest').click(function() {
+                                       // Realiza la solicitud AJAX al hacer clic en el botón
+                                       $.ajax({
+                                         url: 'example.com',
+                                         type: 'GET',
+                                         success: function(data) {
+                                           // Manipula la respuesta del servidor
+                                           $('#result').text(JSON.stringify(data));
+                                         },
+                                          error: function(jqXHR, textStatus, errorThrown) {
+                                           // Maneja los errores de la solicitud AJAX
+                                           $('#result').text('Error en la solicitud AJAX');
+                                         }
+                                        });
+                                      });
+                                    });
+                                 </script>
+
+
+                                </div>
+                         </div>
+
+                        <div class="panel panel-primary" id="Eje2">
+                                <div class="panel-heading"> <h2>EJEMPLO 2:</h2></div>
+                                <div class="panel-body">
+                                  <div> <h2> <span>  Cómo utilizar $.parseJSON() en jQuery</span></h2>   </div>
+
+                                    <div>
+                                         En este ejemplo, hemos definido una cadena JSON bien formada en la variable jsonString. Luego, utilizamos $.parseJSON() para analizar la cadena JSON y obtener el objeto JavaScript resultante. Al cargar la página, verás los valores de las propiedades name, age y city que se han obtenido del objeto JavaScript generado a partir de la cadena JSON.
+                                    </div>  
+                                    
+                                      <button id="parseButton">Parse JSON</button>   
+                                     <div>
+                                       <p>Name: <span id="name"></span></p>
+                                       <p>Age: <span id="age"></span></p>
+                                       <p>City: <span id="city"></span></p>
+                                     </div>
+
+                                    
+                                     <script>
+                                       $(document).ready(function() {
+                                        $('#parseButton').click(function() {
+                                         // JSON string
+                                         var jsonString = '{"name": "Fercho", "age": 25, "city": "Quito"}';
+                                        
+                                        // Parse the JSON string using $.parseJSON()
+                                        var parsedData = $.parseJSON(jsonString);
+                                        
+                                        // Access the properties of the parsed JSON object
+                                        var name = parsedData.name;
+                                        var age = parsedData.age;
+                                        var city = parsedData.city;
+                                        
+                                        // Display the parsed data
+                                        $('#name').text(name);
+                                        $('#age').text(age);
+                                        $('#city').text(city);
+                                              });
+                                      });
+                                    </script>
+
+
+
+                                    </div>
+                                 </div>
+                        </div>
+                        
+                    </div>
+                  <script>
+                    // Cargar el archivo XML
+                    var xmlhttp = new XMLHttpRequest();
+                    xmlhttp.open("GET", "xml/ajax.xml", false);
+                    xmlhttp.send();
+                    var xmlData = xmlhttp.response;
+                
+                    // Parsear el XML
+                    var parser = new DOMParser();
+                    var xmlDoc = parser.parseFromString(xmlData, "text/xml");
+                
+                    // Obtener los elementos 'selector'
+                    var selectors = xmlDoc.getElementsByTagName("selector");
+                
+                    // Iterar sobre los elementos 'selector' y construir las filas de la tabla
+                    var tableBody = document.getElementById("table-body6");
+                    for (var i = 0; i < selectors.length; i++) {
+                      var selector = selectors[i];
+                      var name = selector.getElementsByTagName("name")[0].textContent;
+                      var description = selector.getElementsByTagName("description")[0].textContent;
+                
+                      var row = `
+                        <tr>
+                          <td>${name}</td>
+                          <td>${description}</td>
+                        </tr>
+                      `;
+                      tableBody.innerHTML += row;
+                    }
+                  </script>
+
+
+                </section>
+            </div>
+            <div class="Misc">
+                <section id="Misc">
+                    
+                    <div class="container">
+                        <div>
+                            <h1>Metodos Varios</h1>
+                            <p>
+                               Los "Métodos Varios" en jQuery se refieren a una serie de métodos que proporcionan funcionalidades diversas y útiles para manipular y trabajar con elementos HTML, realizar animaciones, gestionar eventos, realizar peticiones AJAX, entre otros.
+
+                                Estos métodos permiten realizar tareas comunes de manera sencilla y eficiente, simplificando la interacción con 
+                                el DOM y agregando funcionalidades avanzadas.
+                            </p>
+                        </div>
+                        <div class="medio_lateral">
+                            <div class="col-md-8 contenido-scrollspy" data-spy="scroll" data-target="#menu" data-offset="0">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Metodo</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="table-body7">
+                                            <!-- Aquí puedes agregar filas adicionales si es necesario -->
+                                        </tbody>
+                                    </table>
+                            </div>                                
+                    </div>
+                    <div class="col-md-11">
+
+                        <div class="tab-content">
+                                <div class="panel-heading"> <h2>EJEMPLO 1:</h2></div>
+                                <div class="panel-body">
+                                  <div> <h2> <span> Ejemplo recreativo de cómo utilizar el método get() en jQuery</span></h2>   </div>
+
+                                    <div>
+                                         Dentro del manejador de eventos, utilizamos el selector $('p.highlight') para seleccionar los elementos <p> que tienen la clase "highlight". Luego, utilizamos get() para obtener los elementos DOM que coinciden con el selector.
+                                    </div>
+                                  
+                                 <button id="btnGetElements">Get Elements</button>
+                                 <div id="container23">
+                                   <p class="highlight">Este es un párrafo resaltado 1.</p>
+                                   <p>Este es un párrafo normal.</p>
+                                   <p class="highlight">Este es un párrafo resaltado 2.</p>
+                                 </div>
+                                    
+                                 <script>
+                                   $(document).ready(function() {
+                                     $('#btnGetElements').click(function() {
+                                       // Obtener los elementos <p> dentro del contenedor específico
+                                       var container = $('#container23');
+                                       var elements = container.find('p.highlight').get();
+                                      
+                                      // Iterar sobre los elementos obtenidos y agregar una clase CSS
+                                      $(elements).each(function() {
+                                        $(this).addClass('highlighted23');
+                                      });
+                                    });
+                                  });
+                                </script>
+
+
+                                </div>
+                         </div>
+
+                        <div class="panel panel-primary" id="Eje2">
+                                <div class="panel-heading"> <h2>EJEMPLO 2:</h2></div>
+                                <div class="panel-body">
+                                  <div> <h2> <span> Método $.param() en jQuery para crear una representación serializada</span></h2>   </div>
+
+                                    <div>
+                                         Al cargar la página, verás un botón "Serialize Data". Al hacer clic en el botón, se generará la representación serializada del objeto data y se mostrará en el elemento -div- con id "result". El resultado será una cadena de texto con los pares clave-valor del objeto y el array serializados en formato de consulta de URL.
+                                    </div>
+                                     <button id="btnSerialize1">Serialize Data</button>
+                                     <div id="result24"></div>
+                                     <script>
+                                       $(document).ready(function() {
+                                         $('#btnSerialize1').click(function() {
+                                           var data = {
+                                             name: 'Andy',
+                                             age: 25,
+                                             hobbies: ['Leer', 'Pintar', 'Jugar']
+                                           };
+                                           
+                                           var serializedData = $.param(data);
+                                           
+                                           $('#result24').text(serializedData);
+                                        });
+                                      });
+                                    </script>
+
+
+                                    </div>
+                                 </div>
+                        </div>
+                        
+                    </div>
+                  <script>
+                    // Cargar el archivo XML
+                    var xmlhttp = new XMLHttpRequest();
+                    xmlhttp.open("GET", "xml/misc.xml", false);
+                    xmlhttp.send();
+                    var xmlData = xmlhttp.response;
+                
+                    // Parsear el XML
+                    var parser = new DOMParser();
+                    var xmlDoc = parser.parseFromString(xmlData, "text/xml");
+                
+                    // Obtener los elementos 'selector'
+                    var selectors = xmlDoc.getElementsByTagName("selector");
+                
+                    // Iterar sobre los elementos 'selector' y construir las filas de la tabla
+                    var tableBody = document.getElementById("table-body7");
+                    for (var i = 0; i < selectors.length; i++) {
+                      var selector = selectors[i];
+                      var name = selector.getElementsByTagName("name")[0].textContent;
+                      var description = selector.getElementsByTagName("description")[0].textContent;
+                
+                      var row = `
+                        <tr>
+                          <td>${name}</td>
+                          <td>${description}</td>
+                        </tr>
+                      `;
+                      tableBody.innerHTML += row;
+                    }
+                  </script>
+
+
+                </section>
+            </div>
+            <div class="propiedades">
+                <section id="propiedades">
+                    
+                    <div class="container">
+                        <div>
+                            <h1>Propiedades</h1>
+                            <p>
+                               las propiedades se refieren a los atributos o valores asociados a un elemento o conjunto de elementos seleccionados. Estas propiedades permiten acceder, modificar y manipular diferentes aspectos de los elementos HTML o del entorno en el que se encuentran.
+                            </p>
+                        </div>
+                        <div class="medio_lateral">
+                            <div class="col-md-8 contenido-scrollspy" data-spy="scroll" data-target="#menu" data-offset="0">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Metodo</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="table-body8">
+                                            <!-- Aquí puedes agregar filas adicionales si es necesario -->
+                                        </tbody>
+                                    </table>
+                            </div>                                
+                    </div>
+                    <div class="col-md-11">
+
+                        <div class="tab-content">
+                                <div class="panel-heading"> <h2>EJEMPLO 1:</h2></div>
+                                <div class="panel-body">
+                                  <div> <h2> <span> Propiedad $.fn.jquery  para obtener la versión de jQuery</span></h2>   </div>
+
+                                    <div>
+                                         En este ejemplo, hemos actualizado la línea var version = $.jquery; a var version = $.fn.jquery;, lo que nos permite obtener la versión actual de jQuery correctamente.
+
+Al cargar la página, deberías ver el encabezado "jQuery Version Example" y un párrafo que muestra la versión de jQuery utilizada.
+                                    </div>
+                                  
+                                       <button id="btnGetVersion">Obtener Versión de jQuery</button>
+                                       <p>La versión de jQuery utilizada es: <span id="version"></span></p>
+                                    
+                                      <script>
+                                        $(document).ready(function() {
+                                          $('#btnGetVersion').click(function() {
+                                            var version = $.fn.jquery;
+                                            $('#version').text(version);
+                                          });
+                                        });
+                                      </script>
+
+
+                                </div>
+                         </div>
+
+                        <div class="panel panel-primary" id="Eje2">
+                                <div class="panel-heading"> <h2>EJEMPLO 2:</h2></div>
+                                <div class="panel-body">
+                                  <div> <h2> <span>  Utilizar jQuery.fx.off para desactivar y habilitar las animaciones:</span></h2>   </div>
+
+                                    <div>
+                                         En este ejemplo, hemos agregado dos botones: "Desactivar Animaciones" y "Habilitar Animaciones". Al hacer clic en el botón "Desactivar Animaciones", establecemos jQuery.fx.off en true, lo que desactiva todas las animaciones y mostramos un mensaje de alerta. Al hacer clic en el botón "Habilitar Animaciones", establecemos jQuery.fx.off en false, lo que habilita las animaciones nuevamente y mostramos un mensaje de alerta.
+                                    </div>
+                                     <button id="btnDisableAnimations">Desactivar Animaciones</button>
+                                         <button id="btnEnableAnimations">Habilitar Animaciones</button>
+                                         <div id="box21" style="width: 100px; height: 100px; background-color: red;"></div>
+
+                                     <script>
+                                       $(document).ready(function() {
+                                          $('#btnDisableAnimations').click(function() {
+                                           jQuery.fx.off = true;
+                                           alert('Las animaciones están desactivadas.');
+                                         });
+                                    
+                                         $('#btnEnableAnimations').click(function() {
+                                           jQuery.fx.off = false;
+                                           alert('Las animaciones están habilitadas.');
+                                         });
+                                       });
+                                     </script>
+
+
+                                    </div>
+                                 </div>
+                        </div>
+                        
+                    </div>
+                  <script>
+                    // Cargar el archivo XML
+                    var xmlhttp = new XMLHttpRequest();
+                    xmlhttp.open("GET", "xml/propiedades.xml", false);
+                    xmlhttp.send();
+                    var xmlData = xmlhttp.response;
+                
+                    // Parsear el XML
+                    var parser = new DOMParser();
+                    var xmlDoc = parser.parseFromString(xmlData, "text/xml");
+                
+                    // Obtener los elementos 'selector'
+                    var selectors = xmlDoc.getElementsByTagName("selector");
+                
+                    // Iterar sobre los elementos 'selector' y construir las filas de la tabla
+                    var tableBody = document.getElementById("table-body8");
+                    for (var i = 0; i < selectors.length; i++) {
+                      var selector = selectors[i];
+                      var name = selector.getElementsByTagName("name")[0].textContent;
+                      var description = selector.getElementsByTagName("description")[0].textContent;
+                
+                      var row = `
+                        <tr>
+                          <td>${name}</td>
+                          <td>${description}</td>
+                        </tr>
+                      `;
+                      tableBody.innerHTML += row;
+                    }
+                  </script>
+
+
+                </section>
+            </div>
+
+
+
+
+
+            </div>
+        </div>
+        
+        <!-- Bootstrap core JS-->
+       
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script>
+            window.sr = ScrollReveal();
+
+            sr.reveal('.selectores', {
+              duration: 2000,
+              origin: 'top',
+              distance: '300px',
+              reset:true,
+              afterReveal:function(el){
+                sr.reveal(el);
+              }
+            });
+        
+        
+            sr.reveal('.Variables', {
+              duration: 2000,
+              origin: 'bottom',
+              distance: '300px',
+              reset:true,
+              afterReveal:function(el){
+                sr.reveal(el);
+              }
+            });
+        
+            sr.reveal('.Efectos', {
+              duration: 2000,
+              origin: 'top',
+              distance: '300px',
+              reset:true,
+              afterReveal:function(el){
+                sr.reveal(el);
+              }
+            });
+        
+            sr.reveal('.HTML_CSS', {
+              duration: 2000,
+              origin: 'right',
+              distance: '300px',
+              reset:true,
+              afterReveal:function(el){
+                sr.reveal(el);
+              }
+            });
+        
+            sr.reveal('.cruzado', {
+              duration: 2000,
+              delay: 1000, 
+              origin: 'bottom',
+              reset:true,
+              afterReveal:function(el){
+                sr.reveal(el);
+              }
+            });
+        
+            sr.reveal('.Ajax', {
+              duration: 2000,
+              origin: 'left',
+              distance: '300px',
+              viewFactor: 0.2,
+              reset:true,
+              afterReveal:function(el){
+                sr.reveal(el);
+              }
+            });
+        
+             sr.reveal('.Misc', {
+              duration: 2000,
+              origin: 'right',
+              distance: '300px',
+              reset:true,
+              afterReveal:function(el){
+                sr.reveal(el);
+              }
+            });  
+        
+            sr.reveal('.propiedades', {
+              duration: 2000,
+              origin: 'right',
+              distance: '600px',
+              reset:true,
+              afterReveal:function(el){
+                sr.reveal(el);
+              }
+            });      
+            
+        
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+              anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                  behavior: 'smooth'
+                });
+              });
+            });
+        
+            
+        </script>
+        <script>
+            $(document).ready(function() {
+              $("#sidebarToggle").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+              });
+            });
+          </script>
+        
+    </body>
+</html>

@@ -1,0 +1,118 @@
+<root>
+    <selector>
+    <name>add()</name>
+    <description>Adds elements to the set of matched elements</description>
+    </selector>
+    <selector>
+    <name>addBack()</name>
+    <description>Adds the previous set of elements to the current set</description>
+    </selector>
+    <selector>
+    <name>andSelf()</name>
+    <description>Deprecated in version 1.8. An alias for addBack()</description>
+    </selector>
+    <selector>
+    <name>children()</name>
+    <description>Returns all direct children of the selected element</description>
+    </selector>
+    <selector>
+    <name>closest()</name>
+    <description>Returns the first ancestor of the selected element</description>
+    </selector>
+    <selector>
+    <name>contents()</name>
+    <description>Returns all direct children of the selected element (including text and comment nodes)</description>
+    </selector>
+    <selector>
+    <name>each()</name>
+    <description>Executes a function for each matched element</description>
+    </selector>
+    <selector>
+    <name>end()</name>
+    <description>Ends the most recent filtering operation in the current chain, and return the set of matched elements to its previous state</description>
+    </selector>
+    <selector>
+    <name>eq()</name>
+    <description>	Returns an element with a specific index number of the selected elements</description>
+    </selector>
+    <selector>
+    <name>filter()</name>
+    <description>Reduce the set of matched elements to those that match the selector or pass the function's test</description>
+    </selector>
+    <selector>
+    <name>find()</name>
+    <description>Returns descendant elements of the selected element</description>
+    </selector>
+    <selector>
+    <name>first()</name>
+    <description>Returns the first element of the selected elements</description>
+    </selector>
+    <selector>
+    <name>has()</name>
+    <description>Returns all elements that have one or more elements inside of them</description>
+    </selector>
+    <selector>
+    <name>is()</name>
+    <description>Checks the set of matched elements against a selector/element/jQuery object, and return true if at least one of these elements matches the given arguments</description>
+    </selector>
+    <selector>
+    <name>last()</name>
+    <description>Returns the last element of the selected elements</description>
+    </selector>
+    <selector>
+    <name>map()</name>
+    <description>Passes each element in the matched set through a function, producing a new jQuery object containing the return values</description>
+    </selector>
+    <selector>
+    <name>next()</name>
+    <description>Returns the next sibling element of the selected element</description>
+    </selector>
+    <selector>
+    <name>nextAll()</name>
+    <description>Returns all next sibling elements of the selected element</description>
+    </selector>
+    <selector>
+    <name>nextUntil()</name>
+    <description>Returns all next sibling elements between two given arguments</description>
+    </selector>
+    <selector>
+    <name>not()</name>
+    <description>	Returns elements that do not match a certain criteria</description>
+    </selector>
+    <selector>
+    <name>offsetParent()</name>
+    <description>Returns the first positioned parent element</description>
+    </selector>
+    <selector>
+    <name>parent()</name>
+    <description>Returns the direct parent element of the selected element</description>
+    </selector>
+    <selector>
+    <name>parents()</name>
+    <description>Returns all ancestor elements of the selected element</description>
+    </selector>
+    <selector>
+    <name>parentsUntil()</name>
+    <description>Returns all ancestor elements between two given arguments</description>
+    </selector>
+    <selector>
+    <name>prev()</name>
+    <description>Returns the previous sibling element of the selected element</description>
+    </selector>
+    <selector>
+    <name>prevAll()</name>
+    <description>Returns all previous sibling elements of the selected element</description>
+    </selector>
+    <selector>
+    <name>prevUntil()</name>
+    <description>Returns all previous sibling elements between two given arguments</description>
+    </selector>
+    <selector>
+    <name>siblings()</name>
+    <description>Returns all sibling elements of the selected element</description>
+    </selector>
+    <selector>
+    <name>slice()</name>
+    <description>Reduces the set of matched elements to a subset specified by a range of indices</description>
+    </selector>
+</root>

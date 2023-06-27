@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/22b4bd68fc.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="icon" href="../img/icono.ico">
+    <title>jQuery GET</title>
+  
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/fullpage.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <div id="video">
+        <div class="preloader">
+            <div class="preloader-bounce">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <header id="header">
+            <div class="container-fluid">
+                <div class="navbar">
+                    <a href="../index.html" id="logo">
+                        MENÚ PRINCIPAL
+                    </a>
+                    <div class="navigation-row">
+                        <nav id="navigation">
+                            <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
+                            <div class="nav-box navbar-collapse">
+                                <ul class="navigation-menu nav navbar-nav navbars" id="nav">
+                                    <li data-menuanchor="slide01" class="active"><a href="#slide01">Home</a></li>
+                                    <li data-menuanchor="slide02"><a href="#slide02">Conceptos</a></li>
+                                    <li data-menuanchor="slide03"><a href="#slide03">Aplicaciones</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <video src="../img/programming.mp4" autoplay muted loop id="myVideo">
+            <!-- <source src="img/programming.mp4" type="video/mp4"> -->
+        </video>
+
+        <div id="fullpage" class="fullpage-default">
+
+            <div class="section animated-row" data-section="slide01">
+                <div class="section-inner">
+                    <div class="welcome-box">
+                        <span class="welcome-first animate" data-animate="fadeInUp">Bienvenido a la sección de</span>
+                        <h1 class="welcome-title animate" data-animate="fadeInUp">jQuery GET</h1>
+                        <p class="animate" data-animate="fadeInUp">Desliza hacia abajo para más información sobre jQuery GET</p>
+                        <div class="scroll-down next-section animate data-animate=" fadeInUp=""><img
+                                src="images/mouse-scroll.png" alt=""><span>Scroll Down</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section animated-row" data-section="slide02">
+                <div class="section-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 wide-col-laptop">
+                            <div class="title-block animate" data-animate="fadeInUp">
+                                <span>Conceptos generales de</span>
+                                <h2>jQuery GET</h2>
+                            </div>
+                            <div class="services-section">
+                                <div class="services-list owl-carousel">
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa-solid fa-question"></i></span>
+                                            <h3>¿Qué es?</h3>
+                                            <p>jQuery GET es una función proporcionada por la biblioteca de JavaScript jQuery, que se utiliza para realizar solicitudes HTTP GET (obtener) asíncronas a un servidor web. Permite obtener datos de un servidor y actualizar el contenido de una página web sin tener que recargarla por completo. </p>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box" style="text-align: justify;">
+                                            <span class="service-icon" style="text-align: center;"><i class="fa-solid fa-wrench"></i></span>
+                                            <h3 style="text-align:center;">Características</h3>
+                                            <p>
+                                            <b>1.</b> Utiliza AJAX (Asynchronous JavaScript and XML) para realizar solicitudes asíncronas al servidor.<br>
+                                            <b>2.</b> Puede realizar acciones como actualizar el contenido de una página web, mostrar los datos en un cuadro de diálogo, modificar el estilo de los elementos de la página, etc.<br>
+                                            <b>3.</b> Puede procesar los datos recibidos en diferentes formatos, como JSON, XML o texto plano.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                         <div class="service-box" style="text-align: justify;">
+                                            <span class="service-icon" style="text-align: center;"><i class="fa-solid fa-wrench"></i></span>
+                                            <h3 style="text-align:center;">Estructura</h3>
+                                            <p>
+                                            <b>1. url</b> La URL del servidor a la cual se enviará la solicitud GET.<br>
+                                            <b>2. data (opcional):</b> Los datos que se enviarán al servidor junto con la solicitud GET.<br>
+                                            <b>3. success</b>  La función de devolución de llamada que se ejecutará si la solicitud es exitosa.<br>
+                                            <b>4. dataType (opcional):</b> El tipo de datos esperados en la respuesta del servidor. Puede ser "xml", "json", "script", "html" o "text".
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section animated-row" data-section="slide03">
+                <div class="section-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 wide-col-laptop">
+                            <div class="title-block animate" data-animate="fadeInUp">
+                                <h2>APLICACIÓN</h2>
+                            </div>
+                            <div class="services-section" style="text-align: left;">
+                                <h4>Obtener contenido: texto (), html () y val ()</h4>
+                                <p>Tres métodos jQuery simples, pero útiles, para la manipulación de DOM son:</p>
+                                <p><span class="verde">text()-</span> Establece o devuelve el contenido de texto de los elementos seleccionados</p>
+                                <p><span class="verde">html()-</span> Establece o devuelve el contenido de los elementos seleccionados (incluido el marcado HTML)</p>
+                                <p><span class="verde">val()-</span> Establece o devuelve el valor de los campos de formulario</p>
+                                <p>El siguiente ejemplo demuestra cómo obtener contenido con los métodos jQuery <span class="verde">text()</span> y <span class="verde">html()</span>:</p>
+                                <pre id="code">
+                                    <button class="copy-button" onclick="copiarCodigo()">Copiar</button>
+                                    <code>
+    <span class="plomo">&lt;!DOCTYPE</span> <span class="tag">html</span><span class="plomo">></span>
+    <span class="celeste">&lt;html></span>
+    <span class="celeste">&lt;head></span>
+    &lt;script <span class="rosado">src</span>=<span class="green">"https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"</span>>&lt;/script>
+    &lt;script>
+    $(document).<span class="rojo">ready</span>(<span class="tag">function</span>(){
+        $(<span class="green">"#btn1"</span>).<span class="rojo">click</span>(<span class="tag">function</span>(){
+            alert(<span class="green">"Text: "</span> + $(<span class="green">"#test"</span>).<span class="rojo">text</span>());
+        });
+        $(<span class="green">"#btn2"</span>).<span class="rojo">click</span>(<span class="tag">function</span>(){
+            alert(<span class="green">"HTML: "</span> + $(<span class="green">"#test"</span>).<span class="rojo">html</span>());
+        });
+    });
+    &lt;/script&gt;
+    <span class="celeste">&lt;/head&gt;</span>
+    <span class="celeste">&lt;body&gt;</span>
+
+    &lt;p <span class="rosado">id</span>=<span class="green">"test"</span>&gt;This is some &lt;b>bold&lt;/b&gt; text in a paragraph.p&gt;
+
+    &lt;button <span class="rosado">id</span>=<span class="green">"btn1"</span>>Show Text&lt;/button&gt;
+    &lt;button <span class="rosado">id</span>=<span class="green">"btn2"</span>>Show HTML&lt;/button&gt;
+
+    <span class="celeste">&lt;/body&gt;</span>
+    <span class="celeste">&lt;/html&gt;</span>
+
+                                    </code>
+                                  </pre>
+                                <p>El siguiente ejemplo demuestra cómo obtener el valor de un campo de entrada con el método <span class="verde">val()</span>:</p>
+                                <pre id="code2">
+                                    <button class="copy-button" onclick="copiarCodigo2()">Copiar</button>
+                                    <code>
+    <span class="plomo">&lt;!DOCTYPE</span> <span class="tag">html</span><span class="plomo">></span>
+    <span class="celeste">&lt;html></span>
+    <span class="celeste">&lt;head></span>
+    &lt;script <span class="rosado">src</span>=<span class="green">"https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"</span>>&lt;/script>
+    &lt;script>
+    $(document).<span class="rojo">ready</span>(<span class="tag">function</span>(){
+        $(<span class="green">"button"</span>).<span class="rojo">click</span>(<span class="tag">function</span>(){
+            alert(<span class="green">"Value: "</span> + $(<span class="green">"#test"</span>).<span class="rojo">val</span>());
+        });
+    });
+    &lt;/script>
+    <span class="celeste">&lt;/head></span>
+    <span class="celeste">&lt;body></span>
+
+    &lt;p>Name: &lt;input <span class="rojo">type</span>=<span class="green">"text"</span> <span class="rosado">id</span>=<span class="green">"test"</span> <span class="rojo">value</span>=<span class="green">"Mickey Mouse"</span>>&lt;/p>
+
+    &lt;button>Show Value&lt;/button>
+
+    <span class="celeste">&lt;/body></span>
+    <span class="celeste">&lt;/html></span>
+
+                                    </code>
+                                  </pre>
+                                <h4>Obtener atributos - attr()</h4>
+                                <p>El <span class="verde">attr() mpetodo </span>se utiliza para obtener valores de atributos.</p>
+                                <p>El siguiente ejemplo demuestra cómo obtener el valor del atributo href en un enlace:</p>
+                                <pre id="code3">
+                                    <button class="copy-button" onclick="copiarCodigo3()">Copiar</button>
+                                    <code>
+    <span class="plomo">&lt;!DOCTYPE</span> <span class="tag">html</span><span class="plomo">></span>
+    <span class="celeste">&lt;html></span>
+    <span class="celeste">&lt;head></span>
+    &lt;script <span class="rosado">src</span>=<span class="green">"https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"</span>>&lt;/script>
+    &lt;script>
+    $(document).<span class="rojo">ready</span>(<span class="tag">function</span>(){
+        $(<span class="green">"button"</span>).<span class="rojo">click</span>(<span class="tag">function</span>(){
+            alert($(<span class="green">"#w3s"</span>).<span class="rojo">attr</span>(<span class="green">"href"</span>));
+        });
+    });
+    &lt;/script>
+    <span class="celeste">&lt;/head></span>
+    <span class="celeste">&lt;body></span>
+
+    &lt;p>&lt;a href="https://www.w3schools.com" <span class="rosado">id</span>=<span class="green">"w3s"</span>>W3Schools.com&lt;/a>&lt;/p>
+
+    &lt;button>Show href Value&lt;/button>
+
+    <span class="celeste">&lt;/body></span>
+    <span class="celeste">&lt;/html></span>
+
+                                    </code>
+                                  </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fullpage.min.js"></script>
+    <script src="js/scrolloverflow.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+    function copiarCodigo() {
+      const codeElement = document.getElementById('code');
+      const codeText = codeElement.innerText;
+
+      navigator.clipboard.writeText(codeText)
+        .then(() => {
+          alert("Código copiado al portapapeles.");
+        })
+        .catch((error) => {
+          console.error("Error al copiar el código:", error);
+        });
+    }
+
+    function copiarCodigo2() {
+      const codeElement = document.getElementById('code2');
+      const codeText = codeElement.innerText;
+
+      navigator.clipboard.writeText(codeText)
+        .then(() => {
+          alert("Código copiado al portapapeles.");
+        })
+        .catch((error) => {
+          console.error("Error al copiar el código:", error);
+        });
+    }
+
+    function copiarCodigo3() {
+      const codeElement = document.getElementById('code3');
+      const codeText = codeElement.innerText;
+
+      navigator.clipboard.writeText(codeText)
+        .then(() => {
+          alert("Código copiado al portapapeles.");
+        })
+        .catch((error) => {
+          console.error("Error al copiar el código:", error);
+        });
+    }
+  </script>
+
+
+</body>
+
+</html>

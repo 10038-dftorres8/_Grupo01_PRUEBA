@@ -1,0 +1,70 @@
+<root>
+    <selector>
+    <name>animate()</name>
+    <description>Runs a custom animation on the selected elements</description>
+    </selector>
+    <selector>
+    <name>clearQueue()</name>
+    <description>Removes all remaining queued functions from the selected elements</description>
+    </selector>
+    <selector>
+    <name>delay()</name>
+    <description>Sets a delay for all queued functions on the selected elements</description>
+    </selector>
+    <selector>
+    <name>dequeue()</name>
+    <description>Removes the next function from the queue, and then executes the function</description>
+    </selector>
+    <selector>
+    <name>fadeIn()</name>
+    <description>Fades in the selected elements</description>
+    </selector>
+    <selector>
+    <name>fadeOut()</name>
+    <description>Fades out the selected elements</description>
+    </selector>
+    <selector>
+    <name>fadeTo()</name>
+    <description>Fades in/out the selected elements to a given opacity</description>
+    </selector>
+    <selector>
+    <name>fadeToggle()</name>
+    <description>Toggles between the fadeIn() and fadeOut() methods</description>
+    </selector>
+    <selector>
+    <name>finish()</name>
+    <description>Stops, removes and completes all queued animations for the selected elements</description>
+    </selector>
+    <selector>
+    <name>hide()</name>
+    <description>	Hides the selected elements</description>
+    </selector>
+    <selector>
+    <name>queue()</name>
+    <description>Shows the queued functions on the selected elements</description>
+    </selector>
+    <selector>
+    <name>show()</name>
+    <description>Shows the selected elements</description>
+    </selector>
+    <selector>
+    <name>slideDown()</name>
+    <description>Slides-down (shows) the selected elements</description>
+    </selector>
+    <selector>
+    <name>slideToggle()</name>
+    <description>Toggles between the slideUp() and slideDown() methods</description>
+    </selector>
+    <selector>
+    <name>slideUp()</name>
+    <description>Slides-up (hides) the selected elements</description>
+    </selector>
+    <selector>
+    <name>stop()</name>
+    <description>Stops the currently running animation for the selected elements</description>
+    </selector>
+    <selector>
+    <name>toggle()</name>
+    <description>Toggles between the hide() and show() methods</description>
+    </selector>
+</root>

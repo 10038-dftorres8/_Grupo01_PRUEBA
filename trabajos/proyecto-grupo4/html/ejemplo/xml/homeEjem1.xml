@@ -1,0 +1,12 @@
+<personas>
+  <persona>
+    <nombre>John Doe</nombre>
+    <edad>30</edad>
+    <ciudad>New York</ciudad>
+  </persona>
+  <persona>
+    <nombre>Jane Smith</nombre>
+    <edad>25</edad>
+    <ciudad>Los Angeles</ciudad>
+  </persona>
+</personas>

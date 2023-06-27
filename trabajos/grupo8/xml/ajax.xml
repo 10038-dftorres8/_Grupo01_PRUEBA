@@ -1,0 +1,78 @@
+<root>
+    <selector>
+    <name>$.ajax()</name>
+    <description>Performs an async AJAX request</description>
+    </selector>
+    <selector>
+    <name>$.ajaxPrefilter()</name>
+    <description>Handle custom Ajax options or modify existing options before each request is sent and before they are processed by $.ajax()</description>
+    </selector>
+    <selector>
+    <name>$.ajaxSetup()</name>
+    <description>Sets the default values for future AJAX requests</description>
+    </selector>
+    <selector>
+    <name>$.ajaxTransport()</name>
+    <description>Creates an object that handles the actual transmission of Ajax data</description>
+    </selector>
+    <selector>
+    <name>$.get()</name>
+    <description>Loads data from a server using an AJAX HTTP GET request</description>
+    </selector>
+    <selector>
+    <name>$.getJSON()</name>
+    <description>Loads JSON-encoded data from a server using a HTTP GET request</description>
+    </selector>
+    <selector>
+    <name>$.parseJSON()</name>
+    <description>Deprecated in version 3.0, use JSON.parse() instead. Takes a well-formed JSON string and returns the resulting JavaScript value</description>
+    </selector>
+    <selector>
+    <name>$.getScript()</name>
+    <description>Loads (and executes) a JavaScript from a server using an AJAX HTTP GET request</description>
+    </selector>
+    <selector>
+    <name>$.param()</name>
+    <description>Creates a serialized representation of an array or object (can be used as URL query string for AJAX requests)</description>
+    </selector>
+    <selector>
+    <name>$.post()</name>
+    <description>Loads data from a server using an AJAX HTTP POST request</description>
+    </selector>
+    <selector>
+    <name>ajaxComplete()</name>
+    <description>Specifies a function to run when the AJAX request completes</description>
+    </selector>
+    <selector>
+    <name>ajaxError()</name>
+    <description>Specifies a function to run when the AJAX request completes with an error</description>
+    </selector>
+    <selector>
+    <name>ajaxSend()</name>
+    <description>Specifies a function to run before the AJAX request is sent</description>
+    </selector>
+    <selector>
+    <name>ajaxStart()</name>
+    <description>Specifies a function to run when the first AJAX request begins</description>
+    </selector>
+    <selector>
+    <name>ajaxStop()</name>
+    <description>Specifies a function to run when all AJAX requests have completed</description>
+    </selector>
+    <selector>
+    <name>ajaxSuccess()</name>
+    <description>Specifies a function to run when an AJAX request completes successfully</description>
+    </selector>
+    <selector>
+    <name>load()</name>
+    <description>Loads data from a server and puts the returned data into the selected element</description>
+    </selector>
+    <selector>
+    <name>serialize()</name>
+    <description>Encodes a set of form elements as a string for submission</description>
+    </selector>
+    <selector>
+    <name>serializeArray()</name>
+    <description>Encodes a set of form elements as an array of names and values</description>
+    </selector>
+</root>

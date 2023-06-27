@@ -1,0 +1,231 @@
+<root>
+    <selector>
+    <name>bind()</name>
+    <description>Deprecated in version 3.0. Use the on() method instead. Attaches event handlers to elements</description>
+    </selector>
+    <selector>
+    <name>blur()</name>
+    <description>Attaches/Triggers the blur event</description>
+    </selector>
+    <selector>
+    <name>change()</name>
+    <description>Attaches/Triggers the change event</description>
+    </selector>
+    <selector>
+    <name>click()</name>
+    <description>Attaches/Triggers the click event</description>
+    </selector>
+    <selector>
+    <name>dblclick()</name>
+    <description>Attaches/Triggers the double click event</description>
+    </selector>
+    <selector>
+    <name>delegate()</name>
+    <description>Deprecated in version 3.0. Use the on() method instead. Attaches a handler to current, or future, specified child elements of the matching elements</description>
+    </selector>
+    <selector>
+    <name>die()</name>
+    <description>Removed in version 1.9. Removes all event handlers added with the live() method</description>
+    </selector>
+    <selector>
+    <name>error()</name>
+    <description>Removed in version 3.0. Attaches/Triggers the error event</description>
+    </selector>
+    <selector>
+    <name>event.currentTarget</name>
+    <description>The current DOM element within the event bubbling phase</description>
+    </selector>
+    <selector>
+    <name>event.data</name>
+    <description>Contains the optional data passed to an event method when the current executing handler is bound</description>
+    </selector>
+    <selector>
+    <name>event.delegateTarget</name>
+    <description>Returns the element where the currently-called jQuery event handler was attached</description>
+    </selector>
+    <selector>
+    <name>event.isDefaultPrevented()</name>
+    <description>Returns whether event.preventDefault() was called for the event object</description>
+    </selector>
+    <selector>
+    <name>event.isImmediatePropagationStopped()</name>
+    <description>Returns whether event.stopImmediatePropagation() was called for the event object</description>
+    </selector>
+    <selector>
+    <name>event.isPropagationStopped()</name>
+    <description>Returns whether event.stopPropagation() was called for the event object</description>
+    </selector>
+    <selector>
+    <name>event.namespace</name>
+    <description>Returns the namespace specified when the event was triggered</description>
+    </selector>
+    <selector>
+    <name>event.pageX</name>
+    <description>Returns the mouse position relative to the left edge of the document</description>
+    </selector>
+    <selector>
+    <name>event.pageY</name>
+    <description>Returns the mouse position relative to the top edge of the document</description>
+    </selector>
+    <selector>
+    <name>event.preventDefault()</name>
+    <description>Prevents the default action of the event</description>
+    </selector>
+    <selector>
+    <name>event.relatedTarget</name>
+    <description>Returns which element being entered or exited on mouse movement</description>
+    </selector>
+    <selector>
+    <name>event.result</name>
+    <description>Contains the last/previous value returned by an event handler triggered by the specified event</description>
+    </selector>
+        <selector>
+    <name>event.stopImmediatePropagation()</name>
+    <description>Prevents other event handlers from being called</description>
+    </selector>
+        <selector>
+    <name>event.stopPropagation()</name>
+    <description>Prevents the event from bubbling up the DOM tree, preventing any parent handlers from being notified of the event</description>
+    </selector>
+        <selector>
+    <name>event.target</name>
+    <description>Returns which DOM element triggered the event</description>
+    </selector>
+        <selector>
+    <name>event.timeStamp</name>
+    <description>Returns the number of milliseconds since January 1, 1970, when the event is triggered</description>
+    </selector>
+        <selector>
+    <name>event.type</name>
+    <description>Returns which event type was triggered</description>
+    </selector>
+        <selector>
+    <name>event.which</name>
+    <description>Returns which keyboard key or mouse button was pressed for the event</description>
+    </selector>
+        <selector>
+    <name>focus()</name>
+    <description>Attaches/Triggers the focus event</description>
+    </selector>
+        <selector>
+    <name>focusin()</name>
+    <description>Attaches an event handler to the focusin event</description>
+    </selector>
+        <selector>
+    <name>focusout()</name>
+    <description>Attaches an event handler to the focusout event</description>
+    </selector>
+      <selector>
+    <name>hover()</name>
+    <description>Attaches two event handlers to the hover event</description>
+    </selector>
+      <selector>
+    <name>keydown()</name>
+    <description>Attaches/Triggers the keydown event</description>
+    </selector>
+      <selector>
+    <name>keypress()</name>
+    <description>Attaches/Triggers the keypress event</description>
+    </selector>
+      <selector>
+    <name>keyup()</name>
+    <description>Attaches/Triggers the keyup event</description>
+    </selector>
+      <selector>
+    <name>live()</name>
+    <description>Removed in version 1.9. Adds one or more event handlers to current, or future, selected elements</description>
+    </selector>
+      <selector>
+    <name>load()</name>
+    <description>Removed in version 3.0. Attaches an event handler to the load event</description>
+    </selector>
+      <selector>
+    <name>mousedown()</name>
+    <description>Attaches/Triggers the mousedown event</description>
+    </selector>
+      <selector>
+    <name>mouseenter()</name>
+    <description>Attaches/Triggers the mouseenter event</description>
+    </selector>
+  <selector>
+    <name>mouseleave()</name>
+    <description>Attaches/Triggers the mouseleave event</description>
+    </selector>
+      <selector>
+    <name>mousemove()</name>
+    <description>Attaches/Triggers the mousemove event</description>
+    </selector>
+      <selector>
+    <name>mouseout()</name>
+    <description>Attaches/Triggers the mouseout event</description>
+    </selector>
+    <selector>
+    <name>mouseover()</name>
+    <description>Attaches/Triggers the mouseover event</description>
+    </selector>
+    <selector>
+    <name>mouseup()</name>
+    <description>Attaches/Triggers the mouseup event</description>
+    </selector>
+    <selector>
+    <name>off()</name>
+    <description>Removes event handlers attached with the on() method</description>
+    </selector>
+    <selector>
+    <name>on()</name>
+    <description>Attaches event handlers to elements</description>
+    </selector>
+    <selector>
+    <name>one()</name>
+    <description>Adds one or more event handlers to selected elements. This handler can only be triggered once per element</description>
+    </selector>
+    <selector>
+    <name>$.proxy()</name>
+    <description>Takes an existing function and returns a new one with a particular context</description>
+    </selector>
+    <selector>
+    <name>ready()</name>
+    <description>Specifies a function to execute when the DOM is fully loaded</description>
+    </selector>
+    <selector>
+    <name>resize()</name>
+    <description>Attaches/Triggers the resize event</description>
+    </selector>
+    <selector>
+    <name>scroll()</name>
+    <description>Attaches/Triggers the scroll event</description>
+    </selector>
+    <selector>
+    <name>select()</name>
+    <description>Attaches/Triggers the select event</description>
+    </selector>
+    <selector>
+    <name>submit()</name>
+    <description>Attaches/Triggers the submit event</description>
+    </selector>
+    <selector>
+    <name>toggle()</name>
+    <description>Removed in version 1.9. Attaches two or more functions to toggle between for the click event</description>
+    </selector>
+    <selector>
+    <name>trigger()</name>
+    <description>Triggers all events bound to the selected elements</description>
+    </selector>
+    <selector>
+    <name>triggerHandler()</name>
+    <description>	Triggers all functions bound to a specified event for the selected elements</description>
+    </selector>
+    <selector>
+    <name>unbind()</name>
+    <description>Deprecated in version 3.0. Use the off() method instead. Removes an added event handler from selected elements</description>
+    </selector>
+    <selector>
+    <name>undelegate()</name>
+    <description>Deprecated in version 3.0. Use the off() method instead. Removes an event handler to selected elements, now or in the future</description>
+    </selector>
+    <selector>
+    <name>unload()</name>
+    <description>Removed in version 3.0. Use the on() or trigger() method instead. Attaches an event handler to the unload event</description>
+    </selector>
+    <selector>
+</root>

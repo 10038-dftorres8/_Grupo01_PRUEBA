@@ -1,0 +1,39 @@
+<root>
+    <selector>
+    <name>data()</name>
+    <description>Attaches data to, or gets data from, selected elements</description>
+    </selector>
+    <selector>
+    <name>each()</name>
+    <description>Execute a function for each matched element</description>
+    </selector>
+    <selector>
+    <name>get()</name>
+    <description>Get the DOM elements matched by the selector</description>
+    </selector>
+    <selector>
+    <name>index()</name>
+    <description>	Search for a given element from among the matched elements</description>
+    </selector>
+    <selector>
+    <name>$.noConflict()</name>
+    <description>Release jQuery's control of the $ variable</description>
+    </selector>
+    <selector>
+    <name>$.param()</name>
+    <description>Create a serialized representation of an array or object (can be used as URL query string for AJAX requests)</description>
+    </selector>
+    <selector>
+    <name>removeData()</name>
+    <description>	Removes a previously-stored piece of data</description>
+    </selector>
+    <selector>
+    <name>size()</name>
+    <description>Removed in version 3.0. Use the length property instead</description>
+    </selector>
+    <selector>
+    <name>toArray()</name>
+    <description>Retrieve all the DOM elements contained in the jQuery set, as an array</description>
+    </selector>
+
+</root>

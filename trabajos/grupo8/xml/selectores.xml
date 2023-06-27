@@ -1,0 +1,345 @@
+<root>
+<selector>
+    <name>PrimerBloque</name>
+    <example></example>
+    <description></description>
+  </selector>
+  <selector>
+    <name>*</name>
+    <example>$("*")</example>
+    <description>All elements</description>
+  </selector>
+  <selector>
+    <name>#id</name>
+    <example>$("#lastname")</example>
+    <description>The element with id="lastname"</description>
+  </selector>
+  <selector>
+    <name>.class</name>
+    <example>$(".intro")</example>
+    <description>All elements with class="intro"</description>
+  </selector>
+  <selector>
+    <name>.class,.class</name>
+    <example>$(".intro,.demo")</example>
+    <description>All elements with the class "intro" or "demo"</description>
+  </selector>
+  <selector>
+    <name>element</name>
+    <example>$("p")</example>
+    <description>All &amp;lt;p&amp;gt; elements</description>
+  </selector>
+<selector>
+    <name>el1,el2,el3</name>
+    <example>$("h1,div,p")</example>
+    <description>All &amp;lt;h1&amp;gt;, &amp;lt;div&amp;gt; and &amp;lt;p&amp;gt; elements</description>
+  </selector>
+<selector>
+    <name>SegundoBloque</name>
+    <example></example>
+    <description></description>
+  </selector>
+<selector>
+    <name>:first</name>
+    <example>$("p:first")</example>
+    <description>The first &amp;lt;p&amp;gt; element</description>
+  </selector>
+<selector>
+    <name>:last</name>
+    <example>$("p:last")</example>
+    <description>The last &amp;lt;p&amp;gt; element</description>
+  </selector>
+<selector>
+    <name>:even</name>
+    <example>$("tr:even")</example>
+    <description>All even &amp;lt;tr&amp;gt; elements</description>
+  </selector>
+<selector>
+    <name>:odd</name>
+    <example>$("tr:odd")</example>
+    <description>All odd &amp;lt;tr&amp;gt; elements</description>
+  </selector>
+<selector>
+    <name>TercerBloque</name>
+    <example></example>
+    <description></description>
+  </selector>
+<selector>
+    <name>:first-child</name>
+    <example>$("p:first-child")</example>
+    <description>All &amp;lt;p&amp;gt; elements that are the first child of their parent</description>
+  </selector>
+<selector>
+    <name>:first-of-type</name>
+    <example>$("p:first-of-type")</example>
+    <description>All &amp;lt;p&amp;gt; elements that are the first &amp;lt;p&amp;gt; element of their parent</description>
+  </selector>
+<selector>
+    <name>:last-child</name>
+    <example>$("p:last-child")</example>
+    <description>All &amp;lt;p&amp;gt; elements that are the last child of their parent</description>
+  </selector>
+<selector>
+    <name>:last-of-type</name>
+    <example>$("p:last-of-type")</example>
+    <description>All &amp;lt;p&amp;gt; elements that are the last &amp;lt;p&amp;gt; element of their parent</description>
+  </selector>
+<selector>
+    <name>:nth-child(n)</name>
+    <example>$("p:nth-child(2)")</example>
+    <description>All &amp;lt;p&amp;gt; elements that are the 2nd child of their parent</description>
+  </selector>
+<selector>
+    <name>:nth-last-child(n)</name>
+    <example>$("p:nth-last-child(2)")</example>
+    <description>All &amp;lt;p&amp;gt; elements that are the 2nd child of their parent, counting from the last child</description>
+  </selector>
+<selector>
+    <name>:nth-of-type(n)</name>
+    <example>$("p:nth-of-type(2)")</example>
+    <description>All &amp;lt;p&amp;gt; elements that are the 2nd &amp;lt;p&amp;gt; element of their parent</description>
+  </selector>
+<selector>
+    <name>:nth-last-of-type(n)	</name>
+    <example>$("p:nth-last-of-type(2)")</example>
+    <description>All &amp;lt;p&amp;gt; elements that are the 2nd &amp;lt;p&amp;gt; element of their parent, counting from the last child</description>
+  </selector>
+<selector>
+    <name>:only-child</name>
+    <example>$("p:only-child")</example>
+    <description>All &amp;lt;p&amp;gt; elements that are the only child of their parent</description>
+  </selector>
+<selector>
+    <name>:only-of-type</name>
+    <example>$("p:only-of-type")</example>
+    <description>All &amp;lt;p&amp;gt; elements that are the only child, of its type, of their parent</description>
+  </selector>
+<selector>
+    <name>parent &amp;gt; child</name>
+    <example>$("div &amp;gt; p")</example>
+    <description>All &amp;lt;p&amp;gt; elements that are a direct child of a &amp;lt;div&amp;gt; element</description>
+  </selector>
+<selector>
+    <name>parent descendant</name>
+    <example>$("div p")</example>
+    <description>All &amp;lt;p&amp;gt; elements that are descendants of a &amp;lt;div&amp;gt; element</description>
+  </selector>
+<selector>
+    <name>element + next</name>
+    <example>$("div + p")</example>
+    <description>The &amp;lt;p&amp;gt; element that are next to each &amp;lt;div&amp;gt; elements</description>
+  </selector>
+<selector>
+    <name>element ~ siblings</name>
+    <example>$("div ~ p")</example>
+    <description>All &amp;lt;p&amp;gt; elements that appear after the &amp;lt;div&amp;gt; element</description>
+  </selector>
+<selector>
+    <name>CuartoBloque</name>
+    <example></example>
+    <description></description>
+  </selector>
+<selector>
+    <name>:eq(index)</name>
+    <example>$("ul li:eq(3)")</example>
+    <description>The fourth element in a list (index starts at 0)</description>
+    </selector>
+<selector>
+    <name>:gt(no)</name>
+    <example>$("ul li:gt(3)")</example>
+    <description>List elements with an index greater than 3</description>
+  </selector>
+<selector>
+    <name>:lt(no)</name>
+    <example>$("ul li:lt(3)")</example>
+    <description>List elements with an index less than 3</description>
+  </selector>
+<selector>
+    <name>:not(selector)</name>
+    <example>$("input:not(:empty)")</example>
+    <description>All input elements that are not empty</description>
+  </selector>
+<selector>
+    <name>QuintoBloque</name>
+    <example></example>
+    <description></description>
+  </selector>
+<selector>
+    <name>:header</name>
+    <example>$(":header")</example>
+    <description>All header elements &amp;lt;h1&amp;gt;, &amp;lt;h2&amp;gt; ...</description>
+  </selector>
+<selector>
+    <name>:animated</name>
+    <example>$(":animated")</example>
+    <description>All animated elements</description>
+  </selector>
+<selector>
+    <name>:focus</name>
+    <example>$(":focus")</example>
+    <description>The element that currently has focus</description>
+  </selector>
+<selector>
+    <name>:contains(text)</name>
+    <example>$(":contains('Hello')")</example>
+    <description>All elements which contains the text "Hello"</description>
+  </selector>
+<selector>
+    <name>:has(selector)</name>
+    <example>$("div:has(p)")</example>
+    <description>All &amp;lt;div&amp; elements that have a &amp;lt;p&amp;gt; element</description>
+  </selector>
+<selector>
+    <name>:empty</name>
+    <example>$(":empty")</example>
+    <description>All elements that are empty</description>
+  </selector>
+<selector>
+    <name>:parent</name>
+    <example>$(":parent")</example>
+    <description>All elements that are a parent of another element</description>
+  </selector>
+<selector>
+    <name>:hidden</name>
+    <example>$("p:hidden")</example>
+    <description>All hidden &amp;lt;p&amp;gt; elements</description>
+  </selector>
+<selector>
+    <name>:visible</name>
+    <example>$("table:visible")</example>
+    <description>All visible tables</description>
+  </selector>
+<selector>
+    <name>:root</name>
+    <example>$(":root")</example>
+    <description>The document's root element</description>
+  </selector>
+<selector>
+    <name>:lang(language)</name>
+    <example>$("p:lang(de)")</example>
+    <description>All &amp;lt;p&amp;gt; elements with a lang attribute value starting with "de"</description>
+  </selector>
+<selector>
+    <name>SextoBloque</name>
+    <example></example>
+    <description></description>
+  </selector>
+<selector>
+    <name>[attribute]</name>
+    <example>$("[href]")</example>
+    <description>All elements with a href attribute</description>
+  </selector>
+<selector>
+    <name>[attribute=value]</name>
+    <example>$("[href='default.htm']")</example>
+    <description>All elements with a href attribute value equal to "default.htm"</description>
+  </selector>
+<selector>
+    <name>[attribute!=value]</name>
+    <example>$("[href!='default.htm']")</example>
+    <description>All elements with a href attribute value not equal to "default.htm"</description>
+  </selector>
+<selector>
+    <name>[attribute$=value]</name>
+    <example>$("[href$='.jpg']")</example>
+    <description>All elements with a href attribute value ending with ".jpg"</description>
+  </selector>
+<selector>
+    <name>[attribute|=value]</name>
+    <example>$("[title|='Tomorrow']")</example>
+    <description>All elements with a title attribute value equal to 'Tomorrow', or starting with 'Tomorrow' followed by a hyphen</description>
+  </selector>
+<selector>
+    <name>[attribute^=value]</name>
+    <example>$("[title^='Tom']")</example>
+    <description>All elements with a title attribute value starting with "Tom"</description>
+  </selector>
+<selector>
+    <name>[attribute~=value]</name>
+    <example>$("[title~='hello']")</example>
+    <description>All elements with a title attribute value containing the specific word "hello"</description>
+  </selector>
+<selector>
+    <name>[attribute*=value]</name>
+    <example>$("[title*='hello']")</example>
+    <description>All elements with a title attribute value containing the word "hello"</description>
+  </selector>
+<selector>
+    <name>SeptimoBloque</name>
+    <example></example>
+    <description></description>
+  </selector>
+<selector>
+    <name>:input</name>
+    <example>$(":input")</example>
+    <description>All input elements</description>
+  </selector>
+<selector>
+    <name>:text</name>
+    <example>$(":text")</example>
+    <description>All input elements with type="text"</description>
+  </selector>
+<selector>
+    <name>:password</name>
+    <example>$(":password")</example>
+    <description>All input elements with type="password"</description>
+  </selector>
+<selector>
+    <name>:radio</name>
+    <example>$(":radio")</example>
+    <description>All input elements with type="radio"</description>
+  </selector>
+<selector>
+    <name>:checkbox</name>
+    <example>$(":checkbox")</example>
+    <description>All input elements with type="checkbox"</description>
+  </selector>
+<selector>
+    <name>:submit</name>
+    <example>$(":submit")</example>
+    <description>All input elements with type="submit"</description>
+  </selector>
+<selector>
+    <name>:reset</name>
+    <example>$(":reset")</example>
+    <description>All input elements with type="reset"</description>
+  </selector>
+<selector>
+    <name>:button</name>
+    <example>$(":button")</example>
+    <description>All input elements with type="button"</description>
+  </selector>
+<selector>
+    <name>:image</name>
+    <example>$(":image")</example>
+    <description>All input elements with type="image"</description>
+  </selector>
+<selector>
+    <name>:file</name>
+    <example>$(":file")</example>
+    <description>All input elements with type="file"</description>
+  </selector>
+<selector>
+    <name>:enabled</name>
+    <example>$(":enabled")</example>
+    <description>All enabled input elements</description>
+  </selector>
+
+<selector>
+    <name>:disabled</name>
+    <example>$(":disabled")</example>
+    <description>All disabled input elements</description>
+  </selector>
+
+<selector>
+    <name>:selected</name>
+    <example>$(":selected")</example>
+    <description>All selected input elements</description>
+  </selector>
+
+<selector>
+    <name>:checked</name>
+    <example>$(":checked")</example>
+    <description>All checked input elements</description>
+  </selector>
+</root>

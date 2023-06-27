@@ -1,0 +1,167 @@
+<root>
+    <selector>
+    <name>addClass()</name>
+    <description>Adds one or more class names to selected elements</description>
+    </selector>
+    <selector>
+    <name>after()</name>
+    <description>	Inserts content after selected elements</description>
+    </selector>
+    <selector>
+    <name>append()</name>
+    <description>Inserts content at the end of selected elements</description>
+    </selector>
+    <selector>
+    <name>appendTo()</name>
+    <description>Inserts HTML elements at the end of selected elements</description>
+    </selector>
+    <selector>
+    <name>attr()</name>
+    <description>Sets or returns attributes/values of selected elements</description>
+    </selector>
+    <selector>
+    <name>before()</name>
+    <description>Inserts content before selected elements</description>
+    </selector>
+    <selector>
+    <name>clone()</name>
+    <description>Makes a copy of selected elements</description>
+    </selector>
+    <selector>
+    <name>css()</name>
+    <description>Sets or returns one or more style properties for selected elements</description>
+    </selector>
+    <selector>
+    <name>detach()</name>
+    <description>Removes selected elements (keeps data and events)</description>
+    </selector>
+    <selector>
+    <name>empty()</name>
+    <description>Removes all child nodes and content from selected elements</description>
+    </selector>
+    <selector>
+    <name>hasClass()</name>
+    <description>Checks if any of the selected elements have a specified class name</description>
+    </selector>
+    <selector>
+    <name>height()</name>
+    <description>Sets or returns the height of selected elements</description>
+    </selector>
+    <selector>
+    <name>html()</name>
+    <description>Sets or returns the content of selected elements</description>
+    </selector>
+    <selector>
+    <name>innerHeight()</name>
+    <description>Returns the height of an element (includes padding, but not border)</description>
+    </selector>
+    <selector>
+    <name>innerWidth()</name>
+    <description>Returns the width of an element (includes padding, but not border)</description>
+    </selector>
+    <selector>
+    <name>insertAfter()</name>
+    <description>Inserts HTML elements after selected elements</description>
+    </selector>
+    <selector>
+    <name>insertBefore()</name>
+    <description>Inserts HTML elements before selected elements</description>
+    </selector>
+    <selector>
+    <name>offset()</name>
+    <description>Sets or returns the offset coordinates for selected elements (relative to the document)</description>
+    </selector>
+    <selector>
+    <name>offsetParent()</name>
+    <description>Returns the first positioned parent element</description>
+    </selector>
+    <selector>
+    <name>outerHeight()</name>
+    <description>Returns the height of an element (includes padding and border)</description>
+    </selector>
+    <selector>
+    <name>outerWidth()</name>
+    <description>Returns the width of an element (includes padding and border)</description>
+    </selector>
+    <selector>
+    <name>position()</name>
+    <description>Returns the position (relative to the parent element) of an element</description>
+    </selector>
+    <selector>
+    <name>prepend()</name>
+    <description>Inserts content at the beginning of selected elements</description>
+    </selector>
+    <selector>
+    <name>prependTo()</name>
+    <description>Inserts HTML elements at the beginning of selected elements</description>
+    </selector>
+    <selector>
+    <name>prop()</name>
+    <description>Sets or returns properties/values of selected elements</description>
+    </selector>
+    <selector>
+    <name>remove()</name>
+    <description>Removes the selected elements (including data and events)</description>
+    </selector>
+    <selector>
+    <name>removeAttr()</name>
+    <description>Removes one or more attributes from selected elements</description>
+    </selector>
+    <selector>
+    <name>removeClass()</name>
+    <description>Removes one or more classes from selected elements</description>
+    </selector>
+    <selector>
+    <name>removeProp()</name>
+    <description>Removes a property set by the prop() method</description>
+    </selector>
+    <selector>
+    <name>replaceAll()</name>
+    <description>Replaces selected elements with new HTML elements</description>
+    </selector>
+    <selector>
+    <name>replaceWith()</name>
+    <description>Replaces selected elements with new content</description>
+    </selector>
+    <selector>
+    <name>scrollLeft()</name>
+    <description>Sets or returns the horizontal scrollbar position of selected elements</description>
+    </selector>
+    <selector>
+    <name>scrollTop()</name>
+    <description>Sets or returns the vertical scrollbar position of selected elements</description>
+    </selector>
+    <selector>
+    <name>text()</name>
+    <description>Sets or returns the text content of selected elements</description>
+    </selector>
+    <selector>
+    <name>toggleClass()</name>
+    <description>Toggles between adding/removing one or more classes from selected elements</description>
+    </selector>
+    <selector>
+    <name>unwrap()</name>
+    <description>Removes the parent element of the selected elements</description>
+    </selector>
+    <selector>
+    <name>val()</name>
+    <description>Sets or returns the value attribute of the selected elements (for form elements)</description>
+    </selector>
+    <selector>
+    <name>width()</name>
+    <description>Sets or returns the width of selected elements</description>
+    </selector>
+    <selector>
+    <name>wrap()</name>
+    <description>Wraps HTML element(s) around each selected element</description>
+    </selector>
+    <selector>
+    <name>wrapAll()</name>
+    <description>Wraps HTML element(s) around all selected elements</description>
+    </selector>
+    <selector>
+    <name>wrapInner()</name>
+    <description>Wraps HTML element(s) around the content of each selected element
+</description>
+    </selector>
+</root>

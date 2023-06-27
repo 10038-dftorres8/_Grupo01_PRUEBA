@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>jQuery Effects</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="img/icono.png" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet"/>
+        <link href="css/estilosgrupo3.css" rel="stylesheet"/>
+        <!-- jQuery Scripts-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#!" ><h2>jQuery Effects</h2></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/HTML/index.html"><h6>Inicio</h6></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#hide"><h6>Hide and Show</h6></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#fade"><h6>Fade</h6></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#slide"><h6>Slide</h6></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#animate"><h6>Animate</h6></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#stop"><h6>Stop</h6></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#call"><h6>Callback</h6></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#chaining"><h6>Chaining</h6></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#resumen"><h6>Resumen</h6></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br id="Home"><br><br><!-- Header - set the background image for the header in the line below-->
+        <header class="py-5 bg-image-full" style="background-image: url('img/JQuery-Logo.svg.png')">
+            <div class="text-center my-5"><br><br><br>
+                <br><br><br><br>
+            </div>
+        </header>
+        <!-- Content section-->
+        <section class="py-5">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>jQuery Effects</h2>
+                        <p class="mb-0">son un conjunto de funciones y métodos proporcionados por la biblioteca jQuery que permiten agregar efectos visuales y animaciones a los elementos HTML. Estos efectos son utilizados para mejorar la apariencia y la interactividad de una página web.</p><br>
+                        <p class="mb-0">Los jQuery Effects proporcionan una forma sencilla de aplicar animaciones y transiciones a los elementos HTML sin tener que escribir código JavaScript complejo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Image element - set the background image for the header in the line below-->
+        <div class="py-5 bg-image-full" style="background-image: url('https://media.geeksforgeeks.org/wp-content/cdn-uploads/jquery-banner.png')">
+            <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
+            <div style="height: 20rem"></div>
+        </div>
+        <!-- Hide and Show section-->
+        <section class="py-5" id="hide">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>Hide and Show</h2>
+                        <p class="mb-0">Son dos métodos proporcionados por la biblioteca jQuery que permiten ocultar y mostrar elementos HTML de forma interactiva en una página web.</p><br>
+                        <p class="mb-0">El método <b>"hide()"</b> se utiliza para ocultar elementos seleccionados. Puedes llamar a este método en un elemento HTML específico o en un conjunto de elementos seleccionados usando selectores de jQuery. Al ocultar un elemento con "hide()", se modificará la propiedad CSS "display" del elemento para hacerlo invisible.</p><br>
+                        <p class="mb-0">El método <b>"show()"</b> se utiliza para mostrar elementos ocultos en una página web. Permite hacer que un elemento que está configurado para estar oculto, ya sea mediante CSS o por medio del método</p><br>
+
+                        <h3>Sintaxis</h3>
+                        <p class="mb-0"><b>hide:</b> &nbsp;<code>$("#miElemento").hide();</code></p>
+                        <p class="mb-0"><b>show:</b> &nbsp;<code>$("#miElemento").show();</code></p><br>
+
+                        <h4>Ejemplo 1</h4>
+
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="javascript hljs">
+$(document).ready(function() {
+      $("#showButton").click(function() {
+        $("#content").show(500);
+      });
+
+      $("#hideButton").click(function() {
+        $("#content").hide(500);
+      });
+    });     
+                            </code></pre>
+                        </div>
+                        <h4>Demo</h4>
+                        <div id="content">
+                            <h5>Contenido oculto</h5>
+                            <p class="mb-0">Este es un ejemplo de contenido oculto que se mostrará y ocultará utilizando Hide and Show de jQuery.</p>
+                        </div>
+                        <br>
+                        <button class="btn btn-dark show-btn" id="showButton">Mostrar</button>
+                        <button class="btn btn-dark show-btn" id="hideButton">Ocultar</button><br>
+                        <br>
+                        <script src="js/hide1.js"></script>
+
+                        <h4>Ejemplo 2</h4>
+
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="javascript hljs">
+$(document).ready(function() {
+      $("#btnMostrar").click(function() {
+        $("#imagen").show(1000);
+      });
+      
+      $("#btnOcultar").click(function() {
+        $("#imagen").hide(1000);
+      });
+    });     
+                            </code></pre>
+                        </div>
+                        <h4>Demo</h4>
+                        <img id="imagen" src="img/image1.png" style="display: none;" alt="Imagen oculta"><br>
+                        <br>
+                        <button class="btn btn-dark show-btn" id="btnMostrar">Mostrar</button>
+                        <button class="btn btn-dark show-btn" id="btnOcultar">Ocultar</button><br>
+                        <br>
+                        <script src="js/show2.js"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fade section-->
+        <section class="py-5" id="fade">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>Fade</h2>
+                        <p class="mb-0">El efecto <b>Fade</b> en jQuery es una animación que permite realizar una transición gradual de opacidad (transparencia) en un elemento HTML. Con el efecto "Fade", un elemento puede desvanecerse gradualmente desde visible hasta invisible, o viceversa.</p><br>
+                        <p class="mb-0">En jQuery, el efecto <b>Fade</b> se puede lograr utilizando los métodos <b>fadeIn()</b>, <b>fadeOut()</b>, <b>fadeToggle()</b> y <b>fadeTo()</b>. Estos métodos permiten controlar la opacidad de un elemento durante un período de tiempo determinado, creando una animación suave.</p><br>
+                        <ul>
+                            <li><p class="mb-0">El método <b>fadeIn()</b> se utiliza para hacer que un elemento se desvanezca gradualmente desde invisible hasta visible.</p></li>
+                            <li><p class="mb-0">El método <b>fadeOut()</b> se utiliza para hacer que un elemento se desvanezca gradualmente desde visible hasta invisible.</p></li>
+                            <li><p class="mb-0">El método <b>fadeToggle()</b> se utiliza para alternar entre los estados de visible e invisible de un elemento, realizando una animación de desvanecimiento.</p></li>
+                            <li><p class="mb-0">El método <b>fadeTo()</b> es útil cuando deseas controlar la opacidad de un elemento específico en lugar de mostrarlo u ocultarlo por completo. </p></li>
+                        </ul>
+                        <br>
+
+                        <h3>Sintaxis</h3>
+                        <p class="mb-0"><b>fadeIn:</b> &nbsp;<code>$(selector).fadeIn(speed,callback);</code></p>
+                        <p class="mb-0"><b>fadeOut:</b> &nbsp;<code>$(selector).fadeOut(speed,callback);</code></p>
+                        <p class="mb-0"><b>fadeToggle:</b> &nbsp;<code>$(selector).fadeToggle(speed,callback);</code></p>
+                        <p class="mb-0"><b>fadeTo:</b> &nbsp;<code>$(selector).fadeTo(speed,opacity,callback);</code></p><br>
+
+                        <h4>Ejemplo 1</h4>
+                        <p>En este ejemplo, se llama a la función <b>fadeIn()</b> en el elemento con el id "my-paragraph", lo que provoca que el párrafo se desvanezca gradualmente y se muestre.</p>
+                        <p>Del mismo modo, al hacer clic en el botón "Fade Out", se llama a la función fadeOut() en el mismo elemento, haciendo que el párrafo se desvanezca gradualmente y se oculte.</p>
+
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="javascript hljs">
+$(document).ready(function() {
+      $('#fade-in-button').click(function() {
+        $('#my-paragraph').fadeIn();
+      });
+
+      $('#fade-out-button').click(function() {
+        $('#my-paragraph').fadeOut();
+      });
+    });     
+                            </code></pre>
+                        </div>
+                        <h4>Demo</h4>
+                        <div id="my-paragraph">
+                            <h5>Contenido Oculto</h5>
+                            <p class="mb-0">¡Hola! Soy un párrafo de ejemplo que se muestra con fadeIn y se oculta con fadeOut.</p>
+                        </div>
+                        <br>
+                        <button class="btn btn-dark show-btn" id="fade-in-button">Mostrar con fadeIn</button>
+                        <button class="btn btn-dark show-btn" id="fade-out-button">Ocultar con fadeOut</button><br>
+                        <br>
+                        <script src="js/fade1.js"></script>
+
+                        <h4>Ejemplo 2</h4>
+                        <p class="mb-0">En este ejemplo, hemos creado una secuencia de animaciones utilizando <b>fadeToggle()</b> en diferentes elementos. Al hacer clic en el botón, los cuadros se desvanecerán o aparecerán en secuencia.</p>
+                        <p class="mb-0">Después de completar la secuencia de animaciones en los tres cuadros, se ejecutará el callback y se mostrará una alerta en el navegador.</p><br>
+
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="javascript hljs">
+$(document).ready(function(){
+      $("#btnfadeToggle").click(function(){
+        $("#div1").fadeToggle("slow", function(){
+          $("#div2").fadeToggle("slow", function(){
+            $("#div3").fadeToggle("slow", function(){
+              alert("fadeToggle finalizado con exito");
+            });
+          });
+        });
+      });
+    });     
+                            </code></pre>
+                        </div>
+                        <h4>Demo</h4>
+                        <div>
+                            <div id="div1" class="my-div">Cuadro 1</div>
+                            <div id="div2" class="my-div">Cuadro 2</div>
+                            <div id="div3" class="my-div">Cuadro 3</div>
+                            <p>ㅤ</p>
+                        </div>
+                        
+                        <button class="btn btn-dark show-btn" id="btnfadeToggle">Ocultar/Mostrar</button><br>
+                        <br>
+                        <div class="alert alert-primary">
+                            <div class="d-flex align-items-center">
+                                <p class="mb-0"><b>Nota:</b> El botón de Ejecutar tiene la función de ocultar y mostrar los cuadros de colores.</p>
+                            </div>
+                        </div>
+                        <script src="js/fade2.js"></script>
+
+                        <h4>Ejemplo 3</h4>
+                        <p>En este ejemplo, hemos utilizado el método <b>fadeTo()</b> para desvanecer gradualmente las imágenes con diferentes niveles de opacidad, es decir diferentes parámetros.</p>
+
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="javascript hljs">
+$(document).ready(function(){
+      $("#fade-to-button").click(function(){
+        $("#image1").fadeTo("slow", 0.2);
+        $("#image2").fadeTo("slow", 0.5);
+        $("#image3").fadeTo("slow", 1);
+      });
+    });     
+                            </code></pre>
+                        </div>
+                        <h4>Demo</h4>
+                        <div>
+                            <img id="image1" class="my-image" src="img/jquery200.png" alt="Imagen 1">
+                            <img id="image2" class="my-image" src="img/jquery200.png" alt="Imagen 2">
+                            <img id="image3" class="my-image" src="img/jquery200.png" alt="Imagen 3">
+                        </div>
+                        <br>
+                        <button class="btn btn-dark show-btn" id="fade-to-button">Ejecutar</button>
+                        <br>
+                        <script src="js/fade3.js"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Slide section-->
+        <section class="py-5" id="slide">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>Slide</h2>
+                        <p class="mb-0">El efecto <b>slide</b> en jQuery nos permite deslizar un elemento hacia arriba o hacia abajo para mostrarlo o ocultarlo. Es una forma común de mostrar o esconder contenido de manera suave y elegante.</p><br>
+                        <ul>
+                            <li><p class="mb-0">El método <b>slideToggle()</b> en jQuery se utiliza para alternar la visibilidad de un elemento con un efecto de deslizamiento. Si el elemento está oculto, se deslizará hacia abajo para mostrarlo; si el elemento ya está visible, se deslizará hacia arriba para ocultarlo.</p></li> 
+                        </ul><br>
+
+                        <h3>Sintaxis</h3>
+                        <p class="mb-0"><b>slide:</b> &nbsp;<code>$(selector).slideToggle(speed,callback);</code></p><br>
+
+                        <h4>Ejemplo 1</h4>
+                    
+                        <p>En este ejemplo, se han creado paneles colapsables que se despliegan cuando se hace clics en los encabezados de los paneles. Se obtiene el elemento de contenido correspondiente. Luego, se utiliza <b>slideToggle("slow")</b> para alternar la visibilidad del contenido del panel seleccionado.</p>
+
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="javascript hljs">
+$(document).ready(function(){
+      $(".panel-heading").click(function(){
+        var panelContent = $(this).next(".panel-content");
+        panelContent.slideToggle("slow");
+      });
+    });     
+                            </code></pre>
+                        </div>
+                        <h4>Demo</h4>
+                        <div>
+                            <div class="panel">
+                                <div class="panel-heading">Panel 1</div>
+                                <div class="panel-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae sapiente a illum dolorem nostrum! Quia quisquam cupiditate dolorum, dolores iusto libero ex et natus ducimus voluptas temporibus culpa iste aperiam? </div>
+                            </div>
+
+                            <div class="panel">
+                                <div class="panel-heading">Panel 2</div>
+                                <div class="panel-content">Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Adipisci temporibus facere aperiam eveniet rerum laboriosam inventore accusamus velit nobis. Optio velit ipsam, expedita, iste obcaecati ea nihil modi qui quaerat.</div>
+                            </div>
+
+                            <div class="panel">
+                                <div class="panel-heading">Panel 3</div>
+                                <div class="panel-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, architecto, quisquam odit similique accusantium officia, iure reprehenderit a non distinctio sint vero cumque blanditiis perspiciatis at ipsa. Id esse, fugiat.</div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="alert alert-primary">
+                            <div class="d-flex align-items-center">
+                                <p class="mb-0"><b>Nota:</b> Para ejecutar dar click en los encabezados para mostrar y ocultar el contenido.</p>
+                            </div>
+                        </div>
+                        <script src="js/slide1.js"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Animation section-->
+        <section class="py-5" id="animate">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>Animate</h2>
+                        <p class="mb-0">La función <b>animate()</b> de jQuery es una función que permite animar propiedades CSS de elementos HTML de manera personalizada. Permite crear transiciones suaves y fluidas entre diferentes estados de un elemento.</p>
+                        <p class="mb-0">El efecto <b>animate()</b> permite animar múltiples propiedades CSS al mismo tiempo pasando un objeto con pares clave-valor en lugar de una sola propiedad y su valor.</p><br>
+
+                        <h3>Sintaxis</h3>
+                        <p class="mb-0"><b>animate:</b> &nbsp;<code>$(selector).animate({params},speed,callback);</code></p><br>
+
+                        <h4>Ejemplo 1</h4>
+
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="javascript hljs">
+$(document).ready(function() {
+  var box = $('#box');
+
+  $('#startButton').click(function() {
+    box.animate({
+      opacity: 0.25,
+      width: '100px',
+      height: '100px',
+      marginLeft: '200px',
+      marginTop: '1px',
+      borderRadius: '50%',
+      borderWidth: '10px'
+    }, {
+      duration: 2000,
+      complete: function() {
+        box.css('background-color', 'blue');
+        box.animate({
+          opacity: 1,
+          width: '50px',
+          height: '50px',
+          marginLeft: '0',
+          marginTop: '0',
+          borderRadius: '0',
+          borderWidth: '1px'
+        }, {
+          duration: 2000,
+          complete: function() {
+            box.css('background-color', 'red');
+            $('#startButton').click();
+          }
+        });
+      }
+    });
+  });
+});     
+                            </code></pre>
+                        </div>
+                        <h4>Demo</h4>
+                        <button class="btn btn-dark show-btn" id="startButton">Ejecutar</button><br>
+                        <p> </p>    
+                        <div id="box"></div>
+                        <br>
+                        <script src="js/animate1.js"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Stop section-->
+        <section class="py-5" id="stop">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>Stop</h2>
+                        <p class="mb-0">El <b>stop()</b> método jQuery se utiliza para detener una animación o un efecto antes de que finalice.</p>
+                        <p class="mb-0">El <b>stop()</b> método funciona para todas las funciones de efectos de jQuery, incluidas las animaciones deslizantes, desvanecidas y personalizadas.</p><br>
+
+                        <h3>Sintaxis</h3>
+                        <p class="mb-0"><b>animate:</b> &nbsp;<code>$(selector).stop(stopAll,goToEnd);</code></p><br>
+                        <ol>
+                            <li><p class="mb-0">El parámetro opcional stopAll especifica si también se debe borrar la cola de animación o no. El valor predeterminado es falso, lo que significa que solo se detendrá la animación activa, lo que permitirá que las animaciones en cola se realicen después.</p></li>
+                            <li><p class="mb-0">El parámetro opcional goToEnd especifica si se completa o no la animación actual inmediatamente. El valor predeterminado es falso.</p></li>
+                            <li><p class="mb-0">Entonces, de forma predeterminada, el <b>stop()</b> método elimina la animación actual que se está realizando en el elemento seleccionado.</p></li>
+                        </ol>
+
+                        <h4>Ejemplo 1</h4>
+
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="javascript hljs">
+$(document).ready(function() {
+      var shape = $('#shape');
+      var animationInterval;
+
+      function startAnimation() {
+        shape.animate({ left: '+=200px' }, 2000, 'linear');
+      }
+
+      function stopAnimation() {
+        shape.stop();
+      }
+
+      function resetAnimation() {
+        shape.stop().css('left', '0');
+      }
+
+      $('#startBtn').click(function() {
+        startAnimation();
+      });
+
+      $('#stopBtn').click(function() {
+        stopAnimation();
+      });
+
+      $('#resetBtn').click(function() {
+        resetAnimation();
+      });
+    });     
+                            </code></pre>
+                        </div>
+                        <h4>Demo</h4>
+                        <div id="shape"><p> </p></div>
+                        <p> </p>
+                        <button class="btn btn-dark show-btn" id="startBtn">Iniciar</button>
+                        <button class="btn btn-dark show-btn" id="stopBtn">Detener</button>
+                        <button class="btn btn-dark show-btn" id="resetBtn">Resetear</button>
+                        
+                        <script src="js/stop1.js"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Callback section-->
+        <section class="py-5" id="call">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>Callback</h2>
+                        <p class="mb-0">En jQuery, <b>callback()</b> no es una función específica de jQuery. Sin embargo, el término "callback" se utiliza comúnmente en el contexto de las funciones de devolución de llamada en jQuery.</p>
+                        <p class="mb-0">Una función de devolución de llamada <b>(callback function)</b> en jQuery es una función que se pasa como argumento a otra función y que se ejecuta después de que se haya completado una determinada tarea o evento.</p>
+                        <p class="mb-0">En el contexto de jQuery, muchas de sus funciones y métodos permiten utilizar funciones de devolución de llamada para realizar acciones adicionales después de que se complete una operación. </p><br>
+
+                        <h3>Sintaxis Típica</h3>
+                        <p class="mb-0"><b>callback:</b> &nbsp;<code>$(selector).hide(speed,callback);</code></p><br>
+                        <ol>
+                            <li><p class="mb-0">El parámetro opcional stopAll especifica si también se debe borrar la cola de animación o no. El valor predeterminado es falso, lo que significa que solo se detendrá la animación activa, lo que permitirá que las animaciones en cola se realicen después.</p></li>
+                            <li><p class="mb-0">El parámetro opcional goToEnd especifica si se completa o no la animación actual inmediatamente. El valor predeterminado es falso.</p></li>
+                            <li><p class="mb-0">Entonces, de forma predeterminada, el <b>stop()</b> método elimina la animación actual que se está realizando en el elemento seleccionado.</p></li>
+                        </ol>
+
+                        <h4>Ejemplo 1</h4>
+                        <p class="mb-0">En este ejemplo, cuando se carga el documento y se hace clic en el botón en la página, se ejecuta la función de devolución de llamada que muestra una alerta con el mensaje "¡Has hecho clic en el botón!".</p>
+
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="javascript hljs">
+$(document).ready(function() {
+      $("#callBtn").click(function() {
+        alert("¡Has hecho clic en el botón!");
+      });
+    });     
+                            </code></pre>
+                        </div>
+                        <h4>Demo</h4><br>
+                        <button class="btn btn-dark show-btn" id="callBtn">Ejecutar</button>
+                        <br>                       
+                        <br>
+                        <script src="js/call1.js"></script>
+
+                        <h4>Ejemplo 2</h4>
+                        <p class="mb-0">En este ejemplo, al hacer clic en el botón, se aplica una animación de desvanecimiento en el elemento con el ID "miElemento". La función fadeOut de jQuery se utiliza para realizar la animación. Se pasa la cadena "slow" como parámetro para especificar la velocidad de la animación. Además, se proporciona una función de devolución de llamada como argumento de la función fadeOut. Esta función se ejecuta una vez que se completa la animación de desvanecimiento. En este caso, la función muestra una alerta con el mensaje "La animación ha terminado".</p>
+
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="javascript hljs">
+$(document).ready(function() {
+      $("#callBtn2").click(function() {
+        $("#miElemento").fadeOut("slow", function() {
+          alert("La animación ha terminado y el elemento se ha desvanecido");
+        });
+      });
+    });     
+                            </code></pre>
+                        </div>
+                        <h4>Demo</h4>
+                        <div id="miElemento"></div>
+                        <p> </p>
+                        <button class="btn btn-dark show-btn" id="callBtn2">Ejecutar</button>
+                        <br>                       
+                        <br>
+                        <script src="js/call2.js"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Chainig section-->
+        <section class="py-5" id="chaining">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>Chaining</h2>
+                        <p class="mb-0">Método<b>chaining</b> significa la capacidad de encadenar múltiples métodos y acciones en una sola línea de código. jQuery está diseñado para permitir el encadenamiento de métodos, lo que significa que puedes llamar a varios métodos en un objeto jQuery sin necesidad de hacer referencia repetida al objeto.</p>
+                        <p class="mb-0">El métodochaining en jQuery es posible porque la mayoría de los métodos en jQuery retornan el objeto jQuery original. Esto significa que cada método se aplica al objeto jQuery y se devuelve el mismo objeto, lo que permite encadenar más métodos después.</p><br>
+
+                        <h3>Sintaxis</h3>
+                        <p class="mb-0"><b>chaining:</b> &nbsp;<code>$(selector).metodo1().metodo2().metodo3();</code></p><br>
+
+                        <h4>Ejemplo 1</h4>
+                        <p class="mb-0">En este ejemplo, se aplicará una serie de animaciones y cambios de estilo a las cajas. Al hacer clic en el botón, se encadenan los siguientes métodos:</p><br>
+                        <ol>
+                            <li><p class="mb-0"><b>slideDown('slow'):</b> Muestra las cajas deslizándolas hacia abajo con una animación lenta.</p></li>
+                            <li><p class="mb-0"><b>delay(500):</b> Se realiza una pausa de 500 milisegundos (0.5 segundos).</p></li>
+                            <li><p class="mb-0"><b>fadeOut('fast'):</b> Las cajas se desvanecen rápidamente.</p></li>
+                            <li><p class="mb-0"><b>fadeIn('slow'):</b> Las cajas se desvanecen nuevamente, pero esta vez con una animación lenta.</p></li>
+                            <li><p class="mb-0"><b>css('background-color', 'green'):</b> El color de fondo de las cajas se cambia a verde.</p></li>
+                            <li><p class="mb-0"><b>slideUp('fast'):</b> Las cajas se deslizan hacia arriba y se ocultan rápidamente.</p></li>
+                            <li><p class="mb-0">fadeIn('slow'):</b> Las cajas se desvanecen y se muestran nuevamente con una animación lenta.</p></li>
+                        </ol>
+
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="javascript hljs">
+$(document).ready(function() {
+      $('#btnMostrarC').click(function() {
+        $('.caja')
+          .slideDown('slow')
+          .delay(500)
+          .fadeOut('fast')
+          .fadeIn('slow')
+          .css('background-color', 'green')
+          .slideUp('fast')
+          .fadeIn('slow');
+      });
+    });    
+                            </code></pre>
+                        </div>
+                        <h4>Demo</h4>
+                        <div id="contenedor">
+                            <div class="caja"></div>
+                            <div class="caja"></div>
+                            <div class="caja"></div>
+                            <div class="caja"></div>
+                        </div>
+                        <button class="btn btn-dark show-btn" id="btnMostrarC">Ejecutar</button><br>
+                        <br>
+                        <script src="js/chai1.js"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Resumen Section-->
+        <section class="py-5" id="resumen">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>Resumen</h2>
+                        <p class="mb-0">A continuación se muestra una tabla que enumera todos los métodos de jQuery para crear efectos de animación <b>(jQuery Effects)</b>.</p><br>
+
+                        <table class="table table-dark table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Método</th>
+                                    <th>Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>animate()</td>
+                                    <td>Ejecuta una animación personalizada en los elementos seleccionados.</td>
+                                </tr>
+                                <tr>
+                                    <td>clearQueue()</td>
+                                    <td>Elimina todas las funciones en cola restantes de los elementos seleccionados.</td>
+                                </tr>
+                                <tr>
+                                    <td>delay()</td>
+                                    <td>Establece un retraso para todas las funciones en cola en los elementos seleccionados.</td>
+                                </tr>
+                                <tr>
+                                    <td>dequeue()</td>
+                                    <td>Elimina la siguiente función de la cola y luego ejecuta la función.</td>
+                                </tr>
+                                <tr>
+                                    <td>fadeIn()</td>
+                                    <td>Desvanece en los elementos seleccionados.</td>
+                                </tr>
+                                <tr>
+                                    <td>fadeOut()</td>
+                                    <td>Desvanece los elementos seleccionados.</td>
+                                </tr>
+                                <tr>
+                                    <td>fadeTo()</td>
+                                    <td>Anima de entrada/salida de los elementos seleccionados a una opacidad dada.</td>
+                                </tr>
+                                <tr>
+                                    <td>fadeToggle()</td>
+                                    <td>Alterna entre los métodos fadeIn() y fadeOut().</td>
+                                </tr>
+                                <tr>
+                                    <td>finish()</td>
+                                    <td>Detiene, elimina y completa todas las animaciones en cola para los elementos seleccionados.</td>
+                                </tr>
+                                <tr>
+                                    <td>hide()</td>
+                                    <td>Oculta los elementos seleccionados.</td>
+                                </tr>
+                                <tr>
+                                    <td>queue()</td>
+                                    <td>Muestra las funciones en cola en los elementos seleccionados.</td>
+                                </tr>
+                                <tr>
+                                    <td>show()</td>
+                                    <td>Muestra los elementos seleccionados.</td>
+                                </tr>
+                                <tr>
+                                    <td>slideDown()</td>
+                                    <td>Desliza hacia abajo (muestra) los elementos seleccionados.</td>
+                                </tr>
+                                <tr>
+                                    <td>slideToggle()</td>
+                                    <td>Alterna entre los métodos slideUp() y slideDown().</td>
+                                </tr>
+                                <tr>
+                                    <td>slideUp()</td>
+                                    <td>Desliza hacia arriba (oculta) los elementos seleccionados.</td>
+                                </tr>
+                                <tr>
+                                    <td>stop()</td>
+                                    <td>Detiene la animación que se está ejecutando actualmente para los elementos seleccionados.</td>
+                                </tr>
+                                <tr>
+                                    <td>toggle()</td>
+                                    <td>Alterna entre los métodos hide() y show().</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><h6 class="m-0 text-center text-white">GRUPO 3</h6><br>
+                <p class="m-0 text-center text-white">Camilo Arrieta</p>
+                <p class="m-0 text-center text-white">Dayana Llumiquinga</p>
+                <p class="m-0 text-center text-white">Adrian Simbaña</p>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
